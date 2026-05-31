@@ -8,27 +8,27 @@ function SocialLinks() {
     {
       name: "Twitter",
       icon: "fa-brands fa-x-twitter",
-      url: "https://twitter.com/yourhandle",
+      url: "https://x.com/kjaswanth_2",
     },
     {
       name: "Instagram",
       icon: "fa-brands fa-instagram",
-      url: "https://instagram.com/yourhandle",
+      url:  "https://www.instagram.com/jashuuuu.4/",
     },
     {
       name: "LinkedIn",
       icon: "fa-brands fa-linkedin-in",
-      url: "https://linkedin.com/in/yourhandle",
+      url:  "https://www.linkedin.com/in/jaswanth-katukuri-a00a87307/",
     },
     {
       name: "GitHub",
       icon: "fa-brands fa-github",
-      url: "https://github.com/yourhandle",
+      url:  "https://github.com/katukurijaswanth2",
     },
      {
     name: "Medium",
     icon: "fa-brands fa-medium",
-    url: "https://medium.com/@yourhandle",
+    url: "https://medium.com/@katukurijaswanth2",
   }
   ];
 
