@@ -6,16 +6,37 @@ export const Hero = () => {
   return (
     <>
       <div className="hero">
-        <nav className="hero_nav">
-          <div className="hero_brand">
-            <span className="hero_brand_name">
-              Jash<sup>®</sup>
-            </span>
-          </div>
-          <button className="hero_menu_btn" aria-label="Open menu">
-            Menu <span><i className="fa-solid fa-bars"></i></span>
-          </button>
-        </nav>
+        <div className="hero_brand">
+          <nav className="glass-nav">
+            <a href="#" className="nav-logo">
+              JK<span>.</span>
+            </a>
+  
+            <ul className="nav-links">
+              <li>
+                <a href="#home" className="active">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#education">Education</a>
+              </li>
+              <li>
+                <a href="#blog">Blog</a>
+              </li>
+            </ul>
+
+            <a href="#contact" className="nav-cta">
+              Contact
+            </a>
+          </nav>
+        </div>
 
         <div className="hero_photo_overlay" />
 
