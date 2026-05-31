@@ -1,11 +1,13 @@
 import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import AboutMe from "../../../assets/hero.png"
+
 import './Projectslist.css';
 
 const frontendProjects = [
   {
     title: "KatukuriXpress",
-    description: "Responsive website with React.js tailwindcss, redux toolkit, javaScript",
+    description: "Responsive website with React.js, Tailwind CSS, Redux Toolkit, and JavaScript.",
     image: "./images/KatukuriXpress.png",
     github: "https://github.com/katukurijaswanth2/KatukuriXpress.git",
     live: "https://katukurixpress.vercel.app/"
@@ -43,14 +45,14 @@ const frontendProjects = [
 const backendProjects = [
   {
     title: "PriorityCare",
-    description: "A Java backend hospital triage system that prioritizes patients by medical urgency using efficient data structures.",
+    description: "Java backend hospital triage system that prioritizes patients using efficient data structures.",
     image: "../../../assets/hero.png",
     github: "https://github.com/katukurijaswanth2/javaProjects.git",
     live: "https://github.com/katukurijaswanth2/javaProjects.git"
   },
   {
     title: "WorkForceHub",
-    description: "A Spring Boot–based Employee Management REST API with secure CRUD operations and MySQL integration.",
+    description: "Spring Boot Employee Management REST API with secure CRUD operations and MySQL integration.",
     image: "./images/WorkForceHub.png",
     github: "https://github.com/katukurijaswanth2/employee_management.git",
     live: "https://github.com/katukurijaswanth2/employee_management.git"
@@ -60,36 +62,36 @@ const backendProjects = [
 const fullStackProjects = [
   {
     title: "Full Stack E-Commerce",
-    description: "Complete e-commerce app with Spring Boot REST APIs, JWT authentication, MySQL database, and responsive frontend.",
+    description: "Complete e-commerce app with Spring Boot, JWT authentication, MySQL and responsive frontend.",
     image: "./images/jash.png",
     github: "https://github.com/yourusername/fullstack-ecommerce",
     live: "https://yourusername.github.io/fullstack-ecommerce"
   },
   {
     title: "Online Banking System",
-    description: "Secure full stack banking app using Spring Boot, REST APIs, role-based authentication, and frontend dashboards.",
+    description: "Secure banking application with role-based authentication and dashboards.",
     image: "./images/jash.png",
     github: "https://github.com/yourusername/online-banking-system",
     live: "https://yourusername.github.io/online-banking-system"
   },
   {
     title: "Employee Management System",
-    description: "Full stack employee management with Spring Boot backend, CRUD REST APIs, MySQL, and responsive frontend.",
+    description: "Employee management application with CRUD operations and MySQL.",
     image: "./images/jash.png",
     github: "https://github.com/yourusername/employee-management-system",
     live: "https://yourusername.github.io/employee-management-system"
   },
   {
     title: "Task Management App",
-    description: "Task management web app with Spring Boot backend, JWT-based authentication, REST APIs, and dynamic frontend.",
+    description: "Task management application with JWT authentication and REST APIs.",
     image: "./images/jash.png",
     github: "https://github.com/yourusername/task-management-app",
     live: "https://yourusername.github.io/task-management-app"
   },
   {
     title: "Student Management System",
-    description: "Full stack student management using Spring Boot, JPA, MySQL, and a responsive frontend.",
-    image: "./images/jash.png",
+    description: "Student management application using Spring Boot, JPA and MySQL.",
+    image: AboutMe,
     github: "https://github.com/yourusername/student-management-system",
     live: "https://yourusername.github.io/student-management-system"
   }
@@ -98,50 +100,76 @@ const fullStackProjects = [
 const projectsMap = {
   FrontEnd: frontendProjects,
   Backend: backendProjects,
-  FullStack: fullStackProjects,
+  FullStack: fullStackProjects
 };
+
 export const ProjectsList = ({ role = "FrontEnd" }) => {
   const projects = projectsMap[role] || [];
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
-    const container = scrollRef.current;
-    container.scrollBy({
-      left: direction === 'left' ? -320 : 320,
-      behavior: 'smooth'
+    scrollRef.current?.scrollBy({
+      left: direction === "left" ? -320 : 320,
+      behavior: "smooth"
     });
   };
 
   return (
     <div className="projects-wrapper">
-
       <div className="button_chevron">
-        <button className="scroll-btn" onClick={() => scroll('left')} aria-label="Scroll left">
-          <ChevronLeft size={20} strokeWidth={2} />
+        <button
+          className="scroll-btn"
+          onClick={() => scroll("left")}
+          aria-label="Scroll left"
+        >
+          <ChevronLeft size={20} />
         </button>
-        <button className="scroll-btn" onClick={() => scroll('right')} aria-label="Scroll right">
-          <ChevronRight size={20} strokeWidth={2} />
+
+        <button
+          className="scroll-btn"
+          onClick={() => scroll("right")}
+          aria-label="Scroll right"
+        >
+          <ChevronRight size={20} />
         </button>
       </div>
 
       <div className="project-lists" ref={scrollRef}>
         {projects.map((p, index) => (
           <div className="project-card" key={index}>
-            <div className="project-image">
-              <img src={p.image} alt={p.title} />
+            <div className="project-img-tit">
+              <div className="project-image">
+                <img src={p.image} alt={p.title} />
+              </div>
+
+              <div className="project-content">
+                <h3>{p.title}</h3>
+              </div>
             </div>
-            <div className="project-content">
+
+            <div className="project_details">
               <h3>{p.title}</h3>
+
               <p>{p.description}</p>
+
               <div className="project-links">
-                <a href={p.github} target="_blank" rel="noreferrer">GitHub</a>
-                <a href={p.live} target="_blank" rel="noreferrer" className="live">View</a>
+                <a href={p.github} target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
+
+                <a
+                  href={p.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="live"
+                >
+                  View Live
+                </a>
               </div>
             </div>
           </div>
         ))}
       </div>
-
     </div>
   );
 };
