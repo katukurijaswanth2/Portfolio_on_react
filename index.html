@@ -1,30 +1,122 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant+SC:wght@400;600&family=Fleur+De+Leah&family=Lavishly+Yours&family=Trade+Winds&family=Meie+Script&family=Lugrasimo&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#02fd62;">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    <title>JASWANTH KATUKURI</title>
-  </head>
+ <head>
+  <!-- ═══════════════════════════════════════════
+       CHARSET & VIEWPORT
+  ═══════════════════════════════════════════ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════
+       PRIMARY SEO META TAGS
+  ═══════════════════════════════════════════ -->
+  <title>Jaswanth Katukuri | Portfolio</title>
+  <meta name="description" content="Portfolio of Jaswanth Katukuri — showcasing projects, skills, and professional experience." />
+  <meta name="keywords" content="Jaswanth Katukuri, Portfolio, Developer, Designer, Projects" />
+  <meta name="author" content="Jaswanth Katukuri" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- ═══════════════════════════════════════════
+       OPEN GRAPH (Social Share — Facebook, LinkedIn, WhatsApp)
+  ═══════════════════════════════════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jaswanth Katukuri | Portfolio" />
+  <meta property="og:description" content="Portfolio of Jaswanth Katukuri — showcasing projects, skills, and professional experience." />
+  <meta property="og:image" content="https://jaswanthkatukuri4.vercel.app/og-image.png" />
+  <meta property="og:url" content="https://jaswanthkatukuri4.vercel.app/" />
+  <meta property="og:site_name" content="Jaswanth Katukuri" />
+
+  <!-- ═══════════════════════════════════════════
+       TWITTER CARD (Social Share — Twitter/X)
+  ═══════════════════════════════════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@kjaswanth_2" />
+  <meta name="twitter:creator" content="@kjaswanth_2" />
+  <meta name="twitter:title" content="Jaswanth Katukuri | Portfolio" />
+  <meta name="twitter:description" content="Portfolio of Jaswanth Katukuri — showcasing projects, skills, and professional experience." />
+  <meta name="twitter:image" content="https://jaswanthkatukuri4.vercel.app/og-image.png" />
+
+  <!-- ═══════════════════════════════════════════
+       FAVICON & THEME
+  ═══════════════════════════════════════════ -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#02fd62" />
+
+  <!-- ═══════════════════════════════════════════
+       CANONICAL URL
+  ═══════════════════════════════════════════ -->
+  <link rel="canonical" href="https://jaswanthkatukuri4.vercel.app/" />
+
+  <!-- ═══════════════════════════════════════════
+       PERFORMANCE: Preconnect & DNS Prefetch
+  ═══════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+  <!-- ═══════════════════════════════════════════
+       GOOGLE FONTS — All merged into ONE request
+       Weights preserved exactly as original:
+       · Birthstone (default)
+       · Cormorant SC 400;600
+       · Fleur De Leah (default)
+       · Lavishly Yours (default)
+       · Trade Winds (default)
+       · Meie Script (default)
+       · Lugrasimo (default)
+       · Allison (default)
+       · Syne 800
+       · DM Sans 300;400;500
+       · Playfair Display ital+regular 400..900
+       · Gelasio ital+regular 400..700
+       · Alex Brush (default)
+  ═══════════════════════════════════════════ -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant+SC:wght@400;600&family=Fleur+De+Leah&family=Lavishly+Yours&family=Trade+Winds&family=Meie+Script&family=Lugrasimo&family=Allison&family=Syne:wght@800&family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Gelasio:ital,wght@0,400..700;1,400..700&family=Alex+Brush&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- ═══════════════════════════════════════════
+       FONT AWESOME ICONS
+  ═══════════════════════════════════════════ -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <!-- ═══════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD (Google Rich Results)
+  ═══════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jaswanth Katukuri",
+    "url": "https://jaswanthkatukuri4.vercel.app/",
+    "image": "https://jaswanthkatukuri4.vercel.app/og-image.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/jaswanth-katukuri-a00a87307/",
+      "https://github.com/katukurijaswanth2",
+      "https://x.com/kjaswanth_2",
+      "https://www.instagram.com/jashuuuu.4/",
+      "https://medium.com/@katukurijaswanth2"
+    ],
+    "jobTitle": "Developer",
+    "description": "Portfolio of Jaswanth Katukuri — showcasing projects, skills, and professional experience."
+  }
+  </script>
+
+  <!-- ═══════════════════════════════════════════
+       NOTE: Zalando Sans Expanded is not on Google
+       Fonts public API — load via @font-face in CSS
+       if you have the self-hosted font files.
+  ═══════════════════════════════════════════ -->
+
+</head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
