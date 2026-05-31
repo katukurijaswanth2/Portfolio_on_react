@@ -1,0 +1,50 @@
+portfolio/
+├── public/
+│   ├── vite.svg
+│   └── mvc.svg
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── about-me.png
+│   │   │   ├── back.jpg
+│   │   │   ├── hero.png
+│   │   │   └── large-hero.png
+│   │   └── icons/
+│   │       ├── arrow.png
+│   │       └── react.svg
+│   ├── components/
+│   │   ├── common/
+│   │   │   └── RoleBox/
+│   │   │       ├── RoleBox.jsx
+│   │   │       └── RoleBox.css
+│   │   └── features/
+│   │       ├── hero/
+│   │       │   ├── Hero.jsx
+│   │       │   ├── Hero.css
+│   │       │   ├── RealHero.jsx
+│   │       │   └── RealHero.css
+│   │       ├── about/
+│   │       │   ├── About.jsx
+│   │       │   └── About.css
+│   │       ├── roles/
+│   │       │   ├── RolesSection.jsx
+│   │       │   └── RolesSection.css
+│   │       ├── skills/
+│   │       │   ├── Skills.jsx
+│   │       │   ├── Skills.css
+│   │       │   ├── FrontEnd.jsx
+│   │       │   ├── Backend.jsx
+│   │       │   └── FullStack.jsx
+│   │       ├── projects/
+│   │       │   ├── ProjectsSection.jsx
+│   │       │   ├── ProjectsSection.css
+│   │       │   ├── Projectslist.jsx
+│   │       │   └── Projectslist.css
+│   │       └── experience/
+│   │           ├── GrowthCurve.jsx
+│   │           └── GrowthCurve.css
+│   ├── styles/
+│   │   ├── index.css
+│   │   └── App.css
+│   ├── App.jsx
+│   └── main.jsx

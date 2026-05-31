@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Space Mono", monospace;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 16px;
+
+  border: 1px solid white;
+  text-decoration: none;
+
+  color: white;
+  background: transparent;
+
+  position: relative;
+  overflow: hidden;
+
+  opacity: 0;
+  transform: translateY(10px);
+
+  transition: all 0.3s ease;
+}
+
+/* animation when component loads */
+.social-button.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* white slide effect */
+.social-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: white;
+
+  transform: scaleX(0);
+  transform-origin: left;
+
+  transition: transform 0.3s ease;
+}
+
+/* hover effect */
+.social-button:hover::before {
+  transform: scaleX(1);
+}
+
+/* keep icon and text above the white layer */
+.social-button i,
+.social-button span {
+  position: relative;
+  z-index: 1;
+}
+
+/* text turns black on hover */
+.social-button:hover {
+  color: black;
+}

@@ -1,0 +1,146 @@
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── ROOT ── */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url(../src/assets/large-hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Dark vignette — bottom half darkens so name stays readable */
+.hero_photo_overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.06) 0%,
+    rgba(0, 0, 0, 0.02) 38%,
+    rgba(0, 0, 0, 0.70) 72%,
+    rgba(0, 0, 0, 0.88) 100%
+  );
+  z-index: 1;
+}
+
+/* ── TOP NAV ── */
+.hero_nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 28px;
+  z-index: 10;
+}
+
+.hero_brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero_brand_name {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.3px;
+}
+
+.hero_brand_name sup {
+  font-size: 9px;
+  vertical-align: super;
+  letter-spacing: 0;
+}
+
+.hero_menu_btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(20, 20, 20, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background 0.22s;
+}
+
+.hero_menu_btn:hover {
+  background: rgba(40, 40, 40, 0.9);
+}
+
+/* ── GIANT NAME ── */
+.hero_name_wrap {
+  /* position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 24px 18px; */
+  padding: 0;
+  z-index: 2;
+}
+
+.hero_name {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(3rem, 9.5vw, 6.8rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 0.9;
+  letter-spacing: -3px;
+  user-select: none;
+}
+
+.hero_name sup {
+  font-size: clamp(1rem, 3vw, 2.6rem);
+  vertical-align: super;
+  letter-spacing: 0;
+  opacity: 0.9;
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════ */
+@media (max-width: 768px) {
+  .hero_name {
+    letter-spacing: -1.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_nav {
+    padding: 14px 16px;
+  }
+  .hero_name_wrap {
+    padding: 0 16px 14px;
+  }
+}
+.hero_bottom_row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;        /* aligns social links to bottom of name */
+  justify-content: space-between;
+  gap: 32px;
+  padding: 0 40px 40px;         /* adjust to match your existing layout */
+  position: absolute;           /* or relative — match your existing hero layout */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}

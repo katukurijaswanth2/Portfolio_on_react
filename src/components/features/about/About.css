@@ -1,0 +1,272 @@
+/* ===== ABOUT SECTION ===== */
+
+.about_main{
+height: auto;
+    background: url(../../../assets/back.jpg);
+      background-repeat: no-repeat;
+    background-size: cover;
+}
+/* ===== TITLE ===== */
+.about_title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#about_section .about_title_dark {
+    color: black;
+    font-weight: bold;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-family: "Playfair Display", serif;
+  font-weight: bolder;
+  font-style: normal;
+  /* height: 100vh; */
+}
+
+.about_title_curve {
+    color: #4169E1;
+    font-family: "Allison", cursive;
+    font-weight: 400;
+    font-size: 5rem;
+
+    position: absolute;
+    top: 55%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+
+    text-transform: capitalize;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+/* ===== MAIN LAYOUT ===== */
+.about_matter {
+    width: 100%;
+    /* height:100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.about_matter_inside {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== TEXT CONTENT ===== */
+.about_content {
+    /* border: 2px solid green; */
+    width: 50%;
+}
+/* *{
+    outline: 1px solid red;
+} */
+.about_hello {
+    color: #4169E1;
+    font-size: 8rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bolder;
+
+
+  
+
+}
+/* *{
+    padding: 0;
+    margin: 0;
+    outline: 1px solid red;
+} */
+.about_name {
+    font-size: clamp(2rem, 4vw, 3rem);
+     font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-style: normal;
+
+}
+
+.about_para {
+    font-size: 1.1rem;
+    line-height: 30px;
+    text-align: justify;
+ max-width: 90%; 
+    
+  font-style: normal;
+  
+    /* text-align: justify; */
+}
+
+
+/* ===== ARROW ===== */
+.about_arrow {
+  
+}
+
+.about_arrow img {
+ 
+}
+
+/* ===== IMAGE ===== */
+.about_image {
+    height: 30rem;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid yellow; */
+}
+
+.about_image img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+   object-fit: contain;
+}
+
+/* ===== WAVE ===== */
+.about_wave_divider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.about_wave_divider svg {
+    display: block;
+    width: 100%;
+    height: 120px;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    /* #about_section {
+        padding: 40px 15px;
+        min-height: auto;
+    } */
+
+    .about_title {
+        margin-bottom: 30px;
+    }
+
+    .about_title_curve {
+        left: 72%;
+        font-size: 3rem;
+    }
+
+    .about_matter {
+        height: auto;
+    }
+
+    .about_matter_inside {
+        flex-direction: column;
+        gap: 30px;
+        margin: 0;
+    }
+
+    .about_content {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_hello {
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    .about_name {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .about_para {
+        font-size: 1rem;
+        line-height: 26px;
+        margin-top: 1rem;
+        padding: 9px;
+    }
+
+    .about_arrow {
+        top: 57%;
+        left: 2rem;
+        height: 5rem;
+        width: 5rem;
+        transform: rotate(70deg);
+    }
+
+    .about_image {
+        width: 100%;
+        height: 20rem;
+    }
+
+    .about_image img {
+        width: 85%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    /* #about_section {
+        padding: 60px 30px;
+        min-height: auto;
+    } */
+
+    .about_title_curve {
+        left: 65%;
+        font-size: 4rem;
+    }
+
+    .about_matter_inside {
+        display: flex;
+        gap: 40px;
+        margin: 10px;
+    }
+
+    .about_content {
+        width: 80%;
+    }
+
+    .about_hello {
+        font-size: 6rem;
+    }
+
+    .about_name {
+        font-size: 1.5rem;
+    }
+
+    .about_para {
+        font-size: 1.05rem;
+        line-height: 1.6rem;
+    }
+
+    .about_arrow {
+        bottom: 3.5rem;
+        left: 50%;
+        transform: rotate(-10deg);
+    }
+
+    .about_image {
+        width: 60%;
+        height: 30rem;
+    }
+
+    .about_image img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
