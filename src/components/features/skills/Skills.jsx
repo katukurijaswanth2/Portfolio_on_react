@@ -1,5 +1,7 @@
+import React from "react";
 import "./Skills.css";
-
+import mvc from "../../../assets/mvc.svg"
+import cleanCode from "../../../assets/cleancode.svg";
 const skills = [
   {
     name: "Java",
@@ -88,11 +90,11 @@ const skills = [
   },
   {
     name: "Clean Code",
-    image: "images/cleancode.svg",
+    image: cleanCode,
   },
   {
     name: "MVC Architecture",
-    image: "src\assets\mvc.svg",
+    image: mvc,
   },
   {
     name: "React.js",

@@ -81,17 +81,24 @@ height: auto;
   font-weight: bold;
 }
 
-/* MOBILE */
+
 @media (max-width: 768px) {
   .growth_title {
     font-size: 26px;
   }
-
+.growth_title{
+  font-size: 2rem;
+}
   .growth_subtitle {
     font-size: 12px;
   }
 
   .growth_axis text {
     font-size: 10px;
+  }
+}
+@media (max-width: 600px){
+  .growth_title_text{
+    font-size: 3rem;
   }
 }

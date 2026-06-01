@@ -1,42 +1,48 @@
 import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import AboutMe from "../../../assets/hero.png"
-
+import katukuriXpress from "../../../assets/KatukuriXpress.png"
+import foodieGo from "../../../assets/foodieGo.jpg"
+import driveWise from "../../../assets/drivewise.png"
+import gravity from "../../../assets/Grantify.png"
+import portfolio from "../../../assets/portfolio.png"
+import workforse from "../../../assets/WorkForceHub.png"
+import prioritycare from "../../../assets/priorityQueue.png"
 import './Projectslist.css';
 
 const frontendProjects = [
   {
     title: "KatukuriXpress",
     description: "Responsive website with React.js, Tailwind CSS, Redux Toolkit, and JavaScript.",
-    image: "./images/KatukuriXpress.png",
+    image: katukuriXpress,
     github: "https://github.com/katukurijaswanth2/KatukuriXpress.git",
     live: "https://katukurixpress.vercel.app/"
   },
   {
     title: "FoodieGo",
     description: "Responsive shopping website built using HTML, CSS, and JavaScript.",
-    image: "./images/foodieGo.jpg",
+    image: foodieGo,
     github: "https://github.com/katukurijaswanth2/Foodiego.git",
     live: "https://foodiego-by-jaswanth.vercel.app/"
   },
   {
     title: "Portfolio Website",
     description: "Personal portfolio to showcase skills and projects.",
-    image: "./images/portfolio.png",
+    image: portfolio,
     github: "https://github.com/yourusername/portfolio",
     live: "https://yourusername.github.io/portfolio"
   },
   {
     title: "DriveWise",
     description: "DriveWise recommends vehicles based on your income for smarter, easier choices.",
-    image: "./images/drivewise.png",
+    image: driveWise,
     github: "https://github.com/katukurijaswanth2/drivewise.git",
     live: "https://yourusername.github.io/weather-app"
   },
   {
     title: "Grantify",
     description: "Web app that helps students discover scholarships by filtering through income, state, and education level.",
-    image: "./images/Grantify.png",
+    image: gravity,
     github: "https://github.com/katukurijaswanth2/Scholarship-Finder.git",
     live: "https://scholarpath-gamma.vercel.app/"
   }
@@ -46,14 +52,14 @@ const backendProjects = [
   {
     title: "PriorityCare",
     description: "Java backend hospital triage system that prioritizes patients using efficient data structures.",
-    image: "../../../assets/hero.png",
+    image: prioritycare,
     github: "https://github.com/katukurijaswanth2/javaProjects.git",
     live: "https://github.com/katukurijaswanth2/javaProjects.git"
   },
   {
     title: "WorkForceHub",
     description: "Spring Boot Employee Management REST API with secure CRUD operations and MySQL integration.",
-    image: "./images/WorkForceHub.png",
+    image: workforse,
     github: "https://github.com/katukurijaswanth2/employee_management.git",
     live: "https://github.com/katukurijaswanth2/employee_management.git"
   }
@@ -63,7 +69,7 @@ const fullStackProjects = [
   {
     title: "Full Stack E-Commerce",
     description: "Complete e-commerce app with Spring Boot, JWT authentication, MySQL and responsive frontend.",
-    image: "./images/jash.png",
+    image: foodieGo,
     github: "https://github.com/yourusername/fullstack-ecommerce",
     live: "https://yourusername.github.io/fullstack-ecommerce"
   },

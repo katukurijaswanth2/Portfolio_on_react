@@ -14,7 +14,7 @@ import { RolesSection } from "./components/features/roles/RolesSection.jsx";
 function App() {
   return (
     <>
-    <Hero />
+    {/* <Hero /> */}
       <About />
       <GrowthCurve />
       <Skills />

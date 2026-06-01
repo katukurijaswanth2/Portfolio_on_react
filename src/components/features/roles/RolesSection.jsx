@@ -4,7 +4,7 @@ const rolesData = [
   { id: 1, title1: "Full Stack", title2: "Developer" },
   { id: 2, title1: "Front End",  title2: "Developer" },
   { id: 3, title1: "Back End",   title2: "Developer" },
-  { id: 4, title1: "Software",   title2: "Engineer"  },
+  { id: 4, title1: "Software",   title2: "Developer"  },
 ];
 
 export const RolesSection = () => {
