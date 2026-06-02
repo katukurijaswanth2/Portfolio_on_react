@@ -4,7 +4,8 @@ import { MobileMenuHandler } from "../../../javaScript_files/MobileMenuHandler";
 export const MobileHero = () => {
 
     return (
-        <>
+    <>
+       
         <MobileMenuHandler />
             <div className="mobile-hero">
                 <div className="profile-card">
@@ -40,24 +41,16 @@ export const MobileHero = () => {
 
                         {/* From Uiverse.io by StealthWorm */}
                         <div className="star-parent">
-                            <a
-                                href="https://mail.google.com/mail/?view=cm&to=katukurijaswanth2@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn"
-                            >
-                                <strong>HIRE ME</strong>
-
-                                <div id="container-stars">
-                                    <div id="stars"></div>
-                                </div>
-
-                                <div id="glow">
-                                    <div className="circle"></div>
-                                    <div className="circle"></div>
-                                </div>
-                            </a>
-                        </div>
+    <a
+        href="https://mail.google.com/mail/?view=cm&to=katukurijaswanth2@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn"
+    >
+        <span className="text">HIRE ME</span>
+        <span>Thanks 😊</span>
+    </a>
+</div>
 
                         <div className="mlinks">
                             <a
@@ -101,14 +94,15 @@ export const MobileHero = () => {
                             </a>
                         </div>
 
-                        {/* <p className="bio">
+                        <p className="bio">
                             Full-Stack Java Developer (Java, Spring Boot, React.js) with an MCA,
                             experienced in building scalable, user-focused web applications across
                             the complete development lifecycle.
-                        </p> */}
+                        </p>
                     </div>
                 </div>
             </div>
+       
         </>
     );
 };
