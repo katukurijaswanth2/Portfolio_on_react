@@ -11,10 +11,14 @@ import { FullStack } from "./components/features/skills/FullStack.jsx";
 import { About } from "./components/features/about/About";
 import { GrowthCurve } from "./components/features/experience/GrowthCurve";
 import { RolesSection } from "./components/features/roles/RolesSection.jsx";
+import { TitleChange } from "./javaScript_files/TitleChange.jsx";
 function App() {
   return (
     <>
-    {/* <Hero /> */}
+    {/* title change here */}
+    <TitleChange />
+    {/* title change component above there */}
+    <Hero />
       <About />
       <GrowthCurve />
       <Skills />

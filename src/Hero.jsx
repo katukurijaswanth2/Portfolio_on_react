@@ -1,10 +1,12 @@
 import "./Hero.css";
 import heroImg from "./assets/large-hero.png";
 import SocialLinks from "./components/features/contact/SocialLinks";
+import { MobileHero } from "./components/features/hero/MobileHero";
 
 export const Hero = () => {
   return (
     <>
+    <MobileHero />
       <div className="hero">
         <div className="hero_brand">
           <nav className="glass-nav">

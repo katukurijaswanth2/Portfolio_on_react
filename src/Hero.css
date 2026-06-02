@@ -132,6 +132,9 @@
   .hero_name_wrap {
     padding: 0 16px 14px;
   }
+  .hero{
+    display: none;
+  }
 }
 
 .hero_bottom_row {
