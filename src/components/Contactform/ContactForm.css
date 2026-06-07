@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-wrapper {
+  background-color: #0e0e0e;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: 'Arial Black', 'Helvetica Neue', Arial, sans-serif;
+  padding: 0 48px 60px 48px;
+}
+
+/* Big heading */
+.contact-heading {
+  font-size: clamp(72px, 14vw, 160px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #ffffff;
+  margin-bottom: 48px;
+  padding-top: 24px;
+}
+
+/* Body: info left + form right */
+.contact-body {
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* Left info column */
+.contact-info {
+  flex: 0 0 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #cccccc;
+  line-height: 1.9;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+/* Right form */
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.form-label {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+
+/* First + Last name side by side */
+.name-row {
+  display: flex;
+  gap: 32px;
+}
+
+.name-field {
+  flex: 1;
+}
+
+/* Underline-only inputs */
+.form-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #555555;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding: 6px 0 8px 0;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: #666666;
+  font-size: 12px;
+}
+
+.form-input:focus {
+  border-bottom-color: #ffffff;
+}
+
+/* Submit button */
+.submit-btn {
+  align-self: flex-start;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 10px 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  margin-top: 8px;
+}
+
+.submit-btn:hover {
+  background-color: #dddddd;
+}
+
+/* Responsive */
+@media (max-width: 680px) {
+  .contact-wrapper {
+    padding: 0 24px 48px 24px;
+  }
+
+  .contact-body {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact-info {
+    flex: unset;
+  }
+
+  .name-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

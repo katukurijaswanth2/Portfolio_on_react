@@ -16,10 +16,13 @@ export const MobileHero = () => {
                     <div className="contact-parent">
                         <ul className="contactm">
                             <li><i className="fa-solid fa-x"></i></li>
-                            <li><a href="#About-Me">About me</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#service-section">Services</a></li>
-                            <li><a href="#service-section">Projects</a></li>
+                            <li><a href="#about_section">About me</a></li>
+                            <li><a href="#growth_section">Education</a></li>
+                            <li><a href="#skills-section">Skills</a></li>
+                            <li><a href="#service">Services</a></li>
+                             <li>
+                <a href="#blog">Blog</a>
+              </li>
                             <li className="resume">
                                 <a
                                     href="./resume/JASWANTH KATUKURI.pdf"

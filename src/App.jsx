@@ -12,13 +12,14 @@ import { About } from "./components/features/about/About";
 import { GrowthCurve } from "./components/features/experience/GrowthCurve";
 import { RolesSection } from "./components/features/roles/RolesSection.jsx";
 import { TitleChange } from "./javaScript_files/TitleChange.jsx";
+import ContactForm from "./components/Contactform/Contactform.jsx";
 function App() {
   return (
     <>
     {/* title change here */}
     <TitleChange />
     {/* title change component above there */}
-    <Hero />
+      <Hero />
       <About />
       <GrowthCurve />
       <Skills />
@@ -28,6 +29,7 @@ function App() {
 
       <FrontEnd />
       <Backend />
+      {/* <ContactForm /> */}
     </>
   );
 }

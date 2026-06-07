@@ -9,7 +9,7 @@ const rolesData = [
 
 export const RolesSection = () => {
   return (
-    <div className="service">
+    <div className="service " id="service">
       <div className="service-heading">
         <span className="table-of">Table of </span>
         <span className="service-content">contents</span>

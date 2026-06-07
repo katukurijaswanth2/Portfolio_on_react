@@ -16,19 +16,22 @@ export const Hero = () => {
   
             <ul className="nav-links">
               <li>
-                <a href="#home" className="active">
-                  Home
-                </a>
+               
+                <a   href="#about_section"
+  onClick={() => console.log("CLICKED")}>About</a>
+              </li>
+              {/*  */}
+               <li>
+                <a href="#growth_section">Education</a>
               </li>
               <li>
-                <a href="#about">About</a>
+
+                <a href="#skills-section">Skills</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#service">Services</a>
               </li>
-              <li>
-                <a href="#education">Education</a>
-              </li>
+             
               <li>
                 <a href="#blog">Blog</a>
               </li>

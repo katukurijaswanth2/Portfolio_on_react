@@ -204,7 +204,7 @@ export const GrowthCurve = () => {
 
   return (
     <>
-      <section className="growth_section">
+      <section className="growth_section" id="growth_section">
         <div className="growth_chart_wrapper" ref={wrapperRef}>
           <div className="growth_title">
             <span className="growth_title_text">My Education</span>

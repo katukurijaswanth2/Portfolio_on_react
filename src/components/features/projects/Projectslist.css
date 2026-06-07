@@ -5,9 +5,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+.blackbackground{
+  width: 100%;
+  background-color: #000;
+
+}
 
 .projects-wrapper {
-  width: 95%;
+  width: 90%;
   margin: 2rem auto;
   padding: 2rem 1.5rem;
   background: #000;

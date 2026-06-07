@@ -121,6 +121,7 @@ export const ProjectsList = ({ role = "FrontEnd" }) => {
   };
 
   return (
+    <div className="blackbackground">
     <div className="projects-wrapper">
       <div className="button_chevron">
         <button
@@ -176,6 +177,7 @@ export const ProjectsList = ({ role = "FrontEnd" }) => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

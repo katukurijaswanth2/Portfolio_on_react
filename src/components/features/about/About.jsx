@@ -1,4 +1,5 @@
 import "./About.css";
+import StatsCards from "./StatsCards";
 import AboutMe from "../../../../src/assets/AboutMe.png"
 export const About = () => {
   return (
@@ -43,7 +44,10 @@ export const About = () => {
         {/* <div className="about_arrow">
         <img src="src\assets\arrow.png" alt="arrow" />
       </div> */}
+    
       </div>
+    
+  
     </section>
   );
 };

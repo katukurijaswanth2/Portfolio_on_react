@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
- export const MobileMenuHandler = () => {
+export const MobileMenuHandler = () => {
     useEffect(() => {
         const hamburger = document.querySelector(".hamburger");
         const contactParent = document.querySelector(".contact-parent");
@@ -8,15 +8,8 @@ import { useEffect } from "react";
 
         if (!hamburger || !contactParent || !closeIcon) return;
 
-        const openMenu = () => {
-            contactParent.style.display = "block";
-            hamburger.style.display = "none";
-        };
-
-        const closeMenu = () => {
-            contactParent.style.display = "none";
-            hamburger.style.display = "flex";
-        };
+        const openMenu = () => contactParent.classList.add("open");
+        const closeMenu = () => contactParent.classList.remove("open");
 
         hamburger.addEventListener("click", openMenu);
         closeIcon.addEventListener("click", closeMenu);
@@ -29,4 +22,3 @@ import { useEffect } from "react";
 
     return null;
 };
-
