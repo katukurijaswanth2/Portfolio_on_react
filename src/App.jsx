@@ -16,9 +16,9 @@ import ContactForm from "./components/Contactform/Contactform.jsx";
 function App() {
   return (
     <>
-    {/* title change here */}
+
     <TitleChange />
-    {/* title change component above there */}
+
       <Hero />
       <About />
       <GrowthCurve />
@@ -29,7 +29,7 @@ function App() {
 
       <FrontEnd />
       <Backend />
-      {/* <ContactForm /> */}
+
     </>
   );
 }
