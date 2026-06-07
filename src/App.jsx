@@ -29,7 +29,7 @@ function App() {
 
       <FrontEnd />
       <Backend />
-
+<ContactForm />
     </>
   );
 }
