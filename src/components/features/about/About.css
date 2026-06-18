@@ -146,6 +146,61 @@ height: auto;
 
 /* ===================== RESPONSIVE ===================== */
 
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    /* #about_section {
+        padding: 60px 30px;
+        min-height: auto;
+    } */
+
+    .about_title_curve {
+        left: 65%;
+        font-size: 4rem;
+    }
+
+    .about_matter_inside {
+        display: flex;
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .about_content {
+        width: 80%;
+        padding: 20px;
+        padding-right: 0px;
+        margin-right: -10px;;
+    }
+
+    .about_hello {
+        font-size: 6rem;
+    }
+
+    .about_name {
+        font-size: 1.5rem;
+    }
+
+    .about_para {
+        font-size: 1.05rem;
+        line-height: 1.6rem;
+    }
+
+    .about_arrow {
+        bottom: 3.5rem;
+        left: 50%;
+        transform: rotate(-10deg);
+    }
+
+    .about_image {
+        width: 60%;
+        height: 30rem;
+    }
+
+    .about_image img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
 /* MOBILE */
 @media (max-width: 600px) {
 
@@ -215,58 +270,5 @@ height: auto;
         width: 85%;
         height: 100%;
         object-fit: cover;
-    }
-}
-
-/* TABLET */
-@media (min-width: 601px) and (max-width: 1024px) {
-
-    /* #about_section {
-        padding: 60px 30px;
-        min-height: auto;
-    } */
-
-    .about_title_curve {
-        left: 65%;
-        font-size: 4rem;
-    }
-
-    .about_matter_inside {
-        display: flex;
-        gap: 40px;
-        margin: 10px;
-    }
-
-    .about_content {
-        width: 80%;
-    }
-
-    .about_hello {
-        font-size: 6rem;
-    }
-
-    .about_name {
-        font-size: 1.5rem;
-    }
-
-    .about_para {
-        font-size: 1.05rem;
-        line-height: 1.6rem;
-    }
-
-    .about_arrow {
-        bottom: 3.5rem;
-        left: 50%;
-        transform: rotate(-10deg);
-    }
-
-    .about_image {
-        width: 60%;
-        height: 30rem;
-    }
-
-    .about_image img {
-        width: 100%;
-        object-fit: contain;
     }
 }

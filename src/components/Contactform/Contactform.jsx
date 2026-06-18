@@ -42,7 +42,7 @@ const ContactForm = () => {
         {/* Right form column */}
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label className="form-label">Name (required)</label>
+            <label className="form-label">Name </label>
             <div className="name-row">
               <div className="name-field">
                 <input
@@ -70,7 +70,7 @@ const ContactForm = () => {
           </div>
 
           <div className="form-group">
-            <label className="form-label">Email (required)</label>
+            <label className="form-label">Email </label>
             <input
               type="email"
               name="email"
@@ -82,7 +82,7 @@ const ContactForm = () => {
           </div>
 
           <div className="form-group">
-            <label className="form-label">Message (required)</label>
+            <label className="form-label">Message </label>
             <input
               type="text"
               name="message"

@@ -51,14 +51,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
+  background-color: rgb(0, 0, 0);
   min-width: 100%;
 }
-
+/* *{
+  outline: 1px solid red;
+} */
 .parent-role {
   height: auto;
   width: 100%;
   padding: 20px;
+margin-left: -28px;
   display: flex;
   justify-content: center;
   background-color: #000;
@@ -73,6 +76,8 @@
   align-items: center;
   height: auto;
   column-gap: 5rem;
+
+
   row-gap: 2rem;
   padding-bottom: 5rem;
 }
@@ -83,7 +88,8 @@
   position: relative;
   min-height: 320px;
   width: 30rem;
-  display: flex;
+
+display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -94,6 +100,7 @@
   font-family: "Playfair Display", serif;
   font-weight: bold;
   font-size: 12rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,78 +114,42 @@
   display: flex;
 }
 
-.role-title:hover .roleTitle1 {
+/* .role-title:hover .roleTitle1 {
   color: #203163;
 }
 
 .role-title:hover .roleTitle2 {
   color: antiquewhite;
-}
+} */
 
 .roleTitle1 {
   color: white;
   font-family: "Playfair Display", serif;
   position: relative;
-  left: 4rem;
+  left: 4rem; 
+
   top: 2.5rem;
+
   font-weight: bold;
   font-size: 6rem;
 }
 
 .roleTitle2 {
+     /* font-size: 3rem; */
+ 
   color: #4169e1;
   font-family: "Allison", cursive;
   font-weight: 500;
   font-size: 5rem;
   position: absolute;
-  bottom: -4.3rem;
-  left: 20rem;
+  bottom: -4.3rem; 
+ left: 20rem;
   width: fit-content;
 }
 
 /* ============================================
    RESPONSIVE — LAPTOP (1020px)
 ============================================ */
-/* @media (max-width: 1020px) and (min-width: 601px) {
-.table-of {
-    font-size: 4rem;
-    margin-left: 2rem;
-  }
-
-  .service-content {
-    font-size: 3.2rem;
-    top: 1.5rem;
-    left: 13.5rem;
-    
-  }
-
-  .roles-container {
-    width: 100%;
-    column-gap: 2rem;
-    row-gap: 2rem;
-  }
-
-  .role-card {
-    width: 20rem;
-    min-height: 240px;
-  }
-
-  .role-number {
-    font-size: 8rem;
-  }
-
-  .roleTitle1 {
-    font-size: 4rem;
-    left: 2.5rem;
-    top: 1.8rem;
-  }
-
-  .roleTitle2 {
-    font-size: 3rem;
-    left: 14rem;
-    bottom: -2.5rem;
-  }
-} */
 
 
 /* ============================================
