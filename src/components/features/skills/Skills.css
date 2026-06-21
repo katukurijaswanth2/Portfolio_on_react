@@ -1,3 +1,37 @@
+/* ---- Keyframes ---- */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes spinOnce {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ---- Section ---- */
 #skills-section {
   height: auto;
   margin-bottom: 1.9rem;
@@ -5,6 +39,50 @@
   background-color: #ebebebbc;
 }
 
+/* ---- Title animations ---- */
+.skills-title {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+
+.skills-my {
+  color: #000;
+  display: inline;
+  margin-left: 5rem;
+  position: relative;
+  top: 0rem;
+  font-weight: bold;
+  font-size: 6rem;
+  max-width: 100%;
+
+  /* slide in from left */
+  animation: slideInLeft 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.skills-curve {
+  color: #4169e1;
+  font-family: "Allison", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6rem;
+  z-index: 4;
+  position: absolute;
+  top: 1.5rem;
+  left: 25rem;
+  padding-left: 2rem;
+  width: 300px;
+  text-transform: capitalize;
+
+  /* fade in slightly after */
+  animation: fadeIn 0.9s ease 0.4s both;
+}
+
+/* ---- Skills grid ---- */
 .skills-parent {
   display: flex;
   justify-content: center;
@@ -24,28 +102,62 @@
   width: 80%;
 }
 
+/* ---- Card: staggered fade-slide-up ---- */
 .skills-box {
   height: 5rem;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 20rem;
   box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   padding: 0 1.25rem;
   border-radius: 12px;
   border: 1px solid #b2aaaa;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+  /* entry animation */
+  opacity: 0;
+  animation: fadeSlideUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
+/* Stagger each card — nth-child up to 21 */
+.skills-box:nth-child(1)  { animation-delay: 0.05s; }
+.skills-box:nth-child(2)  { animation-delay: 0.10s; }
+.skills-box:nth-child(3)  { animation-delay: 0.15s; }
+.skills-box:nth-child(4)  { animation-delay: 0.20s; }
+.skills-box:nth-child(5)  { animation-delay: 0.25s; }
+.skills-box:nth-child(6)  { animation-delay: 0.30s; }
+.skills-box:nth-child(7)  { animation-delay: 0.35s; }
+.skills-box:nth-child(8)  { animation-delay: 0.40s; }
+.skills-box:nth-child(9)  { animation-delay: 0.45s; }
+.skills-box:nth-child(10) { animation-delay: 0.50s; }
+.skills-box:nth-child(11) { animation-delay: 0.55s; }
+.skills-box:nth-child(12) { animation-delay: 0.60s; }
+.skills-box:nth-child(13) { animation-delay: 0.65s; }
+.skills-box:nth-child(14) { animation-delay: 0.70s; }
+.skills-box:nth-child(15) { animation-delay: 0.75s; }
+.skills-box:nth-child(16) { animation-delay: 0.80s; }
+.skills-box:nth-child(17) { animation-delay: 0.85s; }
+.skills-box:nth-child(18) { animation-delay: 0.90s; }
+.skills-box:nth-child(19) { animation-delay: 0.95s; }
+.skills-box:nth-child(20) { animation-delay: 1.00s; }
+.skills-box:nth-child(21) { animation-delay: 1.05s; }
+
+/* ---- Card hover: lift + blue glow border ---- */
 .skills-box:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  transform: translateY(-15px);
+  /* box-shadow: 0 8px 20px rgba(65, 105, 225, 0.18); */
+  /* border-color: #4169e1; */
 }
 
+/* ---- Icon spin on card hover ---- */
+.skills-box:hover .skills-img {
+  /* animation: spinOnce 0.55s cubic-bezier(0.22, 1, 0.36, 1); */
+}
+
+/* ---- Text & image ---- */
 .skills-name {
   font-size: 1.1rem;
   font-weight: 600;
@@ -55,46 +167,24 @@
   height: 3rem;
   width: 3rem;
   object-fit: contain;
+  /* smooth reset between spins */
+  transition: transform 0.1s;
 }
 
-/* ---------------------------------------- */
-.skills-title {
-font-family: "Playfair Display", serif;
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  height: auto;
-  width: 100%;
+/* ---- Reduced motion: respect user preference ---- */
+@media (prefers-reduced-motion: reduce) {
+  .skills-box,
+  .skills-my,
+  .skills-curve {
+    animation: none;
+    opacity: 1;
+  }
+  .skills-box:hover .skills-img {
+    animation: none;
+  }
 }
 
-.skills-my {
-  color: #000;
-  display: inline;
-  margin-left: 5rem;
-  position: relative;
-  top: 0rem;
-  font-weight: bold;
-  font-size: 6rem;
-  max-width: 100%;
-}
-
-.skills-curve {
-  color: #4169e1;
-  font-family: "Allison", cursive;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 6rem;
-  z-index: 4;
-  position: absolute;
-  top: 1.5rem;
-  left: 25rem;
-  padding-left: 2rem;
-  width: 300px;
-  text-transform: capitalize;
-}
-
-/* mobile skills list */
+/* ---- Mobile ---- */
 @media (max-width: 600px) {
   #skills-section {
     padding: 1.5rem 1rem;
@@ -138,7 +228,7 @@ font-family: "Playfair Display", serif;
   }
 }
 
-/* skills list in tablet */
+/* ---- Tablet ---- */
 @media (min-width: 601px) and (max-width: 1024px) {
   #skills-section {
     padding: 2rem;
