@@ -18,7 +18,7 @@ export const Hero = () => {
               <li>
                
                 <a   href="#about_section"
-  onClick={() => console.log("CLICKED")}>About</a>
+              onClick={() => console.log("CLICKED")}>About</a>
               </li>
               {/*  */}
                <li>
