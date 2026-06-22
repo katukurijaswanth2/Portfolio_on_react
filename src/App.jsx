@@ -19,7 +19,7 @@ function App() {
       <About />
       <GrowthCurve />
       <Skills />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
       <RolesSection />
       <FullStack />
       <FrontEnd />
