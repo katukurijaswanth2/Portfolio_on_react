@@ -37,7 +37,7 @@ export const Hero = () => {
               </li>
             </ul>
 
-            <a href="#contact" className="nav-cta">
+            <a href="#contact_section" className="nav-cta">
               Contact
             </a>
           </nav>

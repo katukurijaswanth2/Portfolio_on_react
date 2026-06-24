@@ -23,6 +23,7 @@ const ContactForm = () => {
   };
 
   return (
+    < section id= "contact_section">
     <div className="contact-wrapper">
       {/* Big heading */}
       <h1 className="contact-heading">Contact me</h1>
@@ -99,6 +100,7 @@ const ContactForm = () => {
         </form>
       </div>
     </div>
+    </section>
   );
 };
 
