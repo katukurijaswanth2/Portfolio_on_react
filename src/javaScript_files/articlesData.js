@@ -3,7 +3,7 @@
 /*  Add or remove entries here; the Blog component will update         */
 /*  automatically.                                                     */
 /* ------------------------------------------------------------------ */
-
+import heroImagae from "../assets/large-hero.png";
 export const img = (seed, w = 600, h = 400) =>
   `https://picsum.photos/seed/${seed}/${w}/${h}`;
 
@@ -32,7 +32,7 @@ export const articles = [
     date: "5d ago",
     excerpt:
       "I don't think AI is going to take away everyone's jobs. That fear gets a lot of attention, but it's not what worries me most.",
-    img: img("ai-selling"),
+    img: heroImagae,
     pinned: true,
   },
   {

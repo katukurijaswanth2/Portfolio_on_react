@@ -1,0 +1,57 @@
+.about_hero_title{
+    font-size: 2rem;
+      font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.section_filter{
+    margin-top: 5px;
+}
+
+.filters_about{
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      font-family: "Stack Sans Notch", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+}
+.about_filteredWork{
+    width: 100%;
+    padding: 25px 0;
+}.about_our{
+  
+      color: #000;
+  display: inline;
+  margin-left: 5rem;
+  position: relative;
+
+   font-family: "Playfair Display", serif;
+  font-size: 4rem;
+    font-weight: bold;
+
+  max-width: 100%;
+  text-transform: capitalize;
+}
+.about_work{
+  color: #4169E1;
+  font-family: "Allison", cursive;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: 5rem;
+  z-index: 4;
+
+  position: absolute;
+  margin-left: -1.7rem;
+
+ 
+
+ 
+
+}

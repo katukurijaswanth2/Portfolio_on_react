@@ -7,7 +7,7 @@ import Blog from './Pages/Blog.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
-    {/* <Blog /> */}
+    {/* <App /> */}
+    <Blog />
   </StrictMode>,
 )
