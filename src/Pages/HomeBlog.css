@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap");
+
+/* ---------------- Tokens ---------------- */
+.hb {
+  --ink: #0b0e14;
+  --white: #ffffff;
+  --blue-700: #1d3fd1;
+  --blue-600: #2f5be0;
+  --blue-100: #eef3ff;
+  --blue-050: #dbe3f3;
+  --gray-blue: #4f5972;
+  --hairline: #dde4f5;
+
+  /* background: var(--white); */
+  color: var(--ink);
+  font-family: "Inter", system-ui, sans-serif;
+  max-width: 80%;
+  margin: 0 auto;
+  /* padding: 0 24px; */
+}
+
+/* ---------------- Hero ---------------- */
+.hb-hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 56px;
+  align-items: center;
+  background-color: var(--white);
+  /* padding: 0px 0 0px 0px; */
+  border-bottom: 1px solid var(--hairline);
+}
+.hb-next-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* adjust spacing as needed */
+}
+
+.hb-hero-media {
+  position: relative;
+  background: var(--ink);
+}
+
+.hb-hero-media img {
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  display: block;
+  /* filter: grayscale(1) contrast(1.05); */
+}
+
+.hb-hero-tag {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  background: var(--blue-700);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+}
+
+.hb-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue-600);
+  margin: 0 0 14px;
+}
+
+.hb-hero-title {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1.08;
+  margin: 0 0 20px;
+  color: var(--ink);
+}
+
+.hb-hero-excerpt {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--gray-blue);
+  margin: 0 0 22px;
+  max-width: 46ch;
+}
+
+.hb-hero-meta {
+  font-size: 13px;
+  color: var(--gray-blue);
+  margin-bottom: 22px;
+}
+
+.hb-author {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.hb-dot {
+  margin: 0 8px;
+}
+
+.hb-readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--blue-700);
+  text-decoration: none;
+  border-bottom: 1px solid var(--blue-700);
+  padding-bottom: 3px;
+  width: fit-content;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.hb-readmore:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.blog_heading {
+  min-width: 100%;
+}
+
+.home_blog {
+  display: inline;
+  position: relative;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  max-width: 100%;
+  font-size: clamp(2.25rem, 6vw, 6rem);
+  margin-left: clamp(1.25rem, 4vw, 4rem);
+}
+
+.aboutH_work {
+  color: #4169e1;
+  font-family: "Allison", cursive;
+  font-weight: 500;
+  font-style: normal;
+  z-index: 10;
+  font-size: clamp(2.25rem, 6vw, 6rem);
+  margin-left: clamp(-1.4rem, -2.4vw, -3.7rem);
+  margin-bottom: clamp(-0.75rem, -1.3vw, -2rem);
+}
+
+.homeBlog_p {
+  height: auto;
+  min-height: 100%;
+  background: url(../assets/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .blog_heading {
+    text-align: center;
+  }
+  .home_blog {
+    margin-left: 2rem;
+  }
+  .aboutH_work {
+    margin-left: -2.2rem;
+    margin-bottom: -1.2rem;
+  }
+  .homeBlog_p {
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .blog_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .home_blog,
+  .aboutH_work {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .home_blog {
+    font-size: 2.25rem;
+  }
+  .aboutH_work {
+    font-size: 2.5rem;
+    margin-top: -0.5rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .hb-hero {
+    grid-template-columns: 1fr;
+    /* padding: 40px 0; */
+  }
+
+  .hb-hero-media img {
+    height: 280px;
+  }
+}

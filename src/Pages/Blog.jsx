@@ -74,12 +74,7 @@ export const Blog = () => {
                   ? heroArticle.excerpt.slice(0, 57) + "..."
                   : heroArticle.excerpt}
               </div>
-              {/* <button className="absolute top-1/2 left-2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-1">
-              <ChevronLeft size={18} />
-            </button>
-            <button className="absolute top-1/2 right-2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white p-1">
-              <ChevronRight size={18} />
-            </button> */}
+             
             </div>
 
             <div className="lg:col-span-5">

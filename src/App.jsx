@@ -11,6 +11,7 @@ import { RolesSection } from "./components/features/roles/RolesSection.jsx";
 import { TitleChange } from "./javaScript_files/TitleChange.jsx";
 import ContactForm from "./components/Contactform/Contactform.jsx";
 import Usesoundeffects from "./components/sounds/Usesoundeffects.jsx"
+import HomeBlog from "./Pages/HomeBlog.jsx";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <About />
       <GrowthCurve />
       <Skills />
+      <HomeBlog />
       <Usesoundeffects />
       <RolesSection />
       <FullStack />
