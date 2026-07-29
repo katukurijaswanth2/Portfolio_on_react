@@ -1,6 +1,6 @@
 import "./About.css";
 import { Code2, GraduationCap, Trophy } from "lucide-react";
-import AboutMe from "../../../../src/assets/AboutMe.png";
+import AboutMe from "../../../assets/AboutMe.webp"
 
 const stats = [
   {

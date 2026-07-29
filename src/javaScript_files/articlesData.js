@@ -4,8 +4,8 @@
 /*  automatically.                                                     */
 /* ------------------------------------------------------------------ */
 import heroImagae from "../assets/large-hero.png";
-import dsa10 from "../assets/Dsa10th.png"
-import fearOfAi from "../assets/fearOfAi.png";
+import dsa10 from "../assets/Dsa10th.webp"
+import fearOfAi from "../assets/fearOfAi.webp";
 import lazyloading from "../assets/lazyloading.webp"
 export const img = (seed, w = 600, h = 400) =>
   `https://picsum.photos/seed/${seed}/${w}/${h}`;
