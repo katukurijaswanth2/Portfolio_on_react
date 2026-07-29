@@ -24,9 +24,10 @@ function App() {
       <HomeBlog />
       <Usesoundeffects />
       <RolesSection />
-      <FullStack />
+   
       <FrontEnd />
       <Backend />
+         <FullStack />
       <ContactForm />
     </>
   );

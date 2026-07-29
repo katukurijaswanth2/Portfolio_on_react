@@ -23,7 +23,7 @@
 .hb-hero {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
-  gap: 56px;
+  gap: 40px;
   align-items: center;
   background-color: var(--white);
   /* padding: 0px 0 0px 0px; */
@@ -47,7 +47,9 @@
   display: block;
   /* filter: grayscale(1) contrast(1.05); */
 }
-
+.hb-hero-copy{
+  padding: 0px 15px;
+}
 .hb-hero-tag {
   position: absolute;
   left: 16px;
@@ -159,6 +161,65 @@
   background-size: cover;
   
 }
+/* From Uiverse.io by aguerquin */ 
+.button-icon {
+  display: flex;
+  border: 3px #fff solid;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.icon {
+  background-color: #fff;
+  padding: 10px 10px 5px 10px;
+}
+
+.icon svg {
+  width: 25px;
+  height: 25px;
+}
+
+.cube {
+  transition: all 0.4s;
+  transform-style: preserve-3d;
+  width: 200px;
+  height: 20px;
+}
+
+.button-icon:hover {
+  border-color: rgb(37, 36, 36);
+}
+
+.button-icon:hover .cube {
+  transform: rotateX(90deg);
+}
+
+.side {
+  position: absolute;
+  height: 47px;
+  width: 200px;
+  display: flex;
+  font-size: 0.8em;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+}
+
+.top {
+  background: var(--blue-600);
+  color: #fff;
+  transform: rotateX(-90deg) translate3d(0, 11.5px, 2em);
+}
+
+.front {
+  background: #222229;
+  color: #fff;
+  transform: translate3d(0, 0, 1em);
+}
+
 
 /* Tablet */
 @media (max-width: 1024px) {
@@ -210,4 +271,12 @@
   .hb-hero-media img {
     height: 280px;
   }
+  .aboutH_work{
+    margin-top: -3rem;
+    margin-left: 9rem;
+  }
+  .home_blog{
+    margin-left: -5rem;
+  }
+
 }

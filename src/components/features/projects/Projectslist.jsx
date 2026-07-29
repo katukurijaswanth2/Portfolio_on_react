@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import AboutMe from "../../../assets/hero.png"
+import AboutMe from "../../../assets/hero-m.png"
 import katukuriXpress from "../../../assets/KatukuriXpress.png"
 import foodieGo from "../../../assets/foodieGo.jpg"
 import driveWise from "../../../assets/drivewise.png"

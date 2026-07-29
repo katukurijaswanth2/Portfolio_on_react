@@ -4,7 +4,9 @@
 /*  automatically.                                                     */
 /* ------------------------------------------------------------------ */
 import heroImagae from "../assets/large-hero.png";
+import dsa10 from "../assets/Dsa10th.png"
 import fearOfAi from "../assets/fearOfAi.png";
+import lazyloading from "../assets/lazyloading.webp"
 export const img = (seed, w = 600, h = 400) =>
   `https://picsum.photos/seed/${seed}/${w}/${h}`;
 
@@ -43,10 +45,17 @@ export const articles = [
     category: "Career",
     date: "2d ago",
     excerpt: "To every new coder: remember your 10th class exam.",
-    img: img("dsa-math"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
-  },
-  {
+    img: dsa10,
+        link: "https://medium.com/@katukurijaswanth2/passed-10th-math-then-dsa-is-not-hard-the-exact-same-trick-applies-311ba8598610?sharedUserId=katukurijaswanth2",
+  },{
+    tags: ["Engineering"],
+    title: "Why I Stopped Shipping One Giant Bundle",
+    category: "Engineering",
+    date: "Jun 2",
+    excerpt:
+      "How lazy loading and code splitting transformed the way I think about React deployments.",
+    img:lazyloading ,
+        link: "https://medium.com/@katukurijaswanth2/why-i-stopped-shipping-one-giant-javascript-bundle-1061440ba894?sharedUserId=katukurijaswanth2"},{
     tags: ["Engineering"],
     title: "Your API Is a Contract with the World",
     category: "Engineering",
@@ -76,16 +85,7 @@ export const articles = [
     img: img("inncircles"),
         link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
-  {
-    tags: ["Engineering"],
-    title: "Why I Stopped Shipping One Giant Bundle",
-    category: "Engineering",
-    date: "Jun 2",
-    excerpt:
-      "How lazy loading and code splitting transformed the way I think about React deployments.",
-    img: img("js-bundle"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
-  },
+ 
   {
     tags: ["Engineering"],
     title: "Understanding BCrypt in Spring Security",

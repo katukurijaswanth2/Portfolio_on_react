@@ -33,7 +33,7 @@ export const Hero = () => {
               </li>
              
               <li>
-                <a href="#blog">Blog</a>
+                <a href="#myBlogu">Blog</a>
               </li>
             </ul>
 

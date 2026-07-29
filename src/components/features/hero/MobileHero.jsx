@@ -21,7 +21,7 @@ export const MobileHero = () => {
                             <li><a href="#skills-section">Skills</a></li>
                             <li><a href="#service">Services</a></li>
                              <li>
-                <a href="#blog">Blog</a>
+                <a href="#myBlogu">Blog</a>
               </li>
                             <li className="resume">
                                 <a
@@ -51,7 +51,7 @@ export const MobileHero = () => {
         className="btn"
     >
         <span className="text">HIRE ME</span>
-        <span>Thanks 😊</span>
+        <span>Thanks </span>
     </a>
 </div>
 
