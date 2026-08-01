@@ -132,7 +132,7 @@
 .home_blog {
   display: inline;
   position: relative;
-  color: #ffffff;
+  color:var(--ink);
   font-family: "Playfair Display", serif;
   font-weight: bold;
   text-transform: capitalize;
@@ -155,10 +155,11 @@
 .homeBlog_p {
   height: auto;
   min-height: 100%;
-  background: url(../assets/background.jpg);
+  background-color: var(--blue-050);
+  /* background: url(../assets/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   
 }
 /* From Uiverse.io by aguerquin */ 

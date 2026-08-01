@@ -2,6 +2,8 @@ import React from "react";
 import { heroArticle, workGrid, AUTHOR, articles } from "../javaScript_files/articlesData";
 import "./HomeBlog.css";
 import { GlassFilterMarquee } from "../components/common/GlassFilterMarquee";
+import { NavButton } from "../components/common/NavButton";
+import StatsSection from "./StatsSection";
 
 export const HomeBlog = () => {
   return (
@@ -12,6 +14,7 @@ export const HomeBlog = () => {
             <span className="home_blog">Technical </span>
             <span className="aboutH_work">  Articles</span>
           </div>
+            <StatsSection />
           <section className="hb">
 
 
@@ -64,8 +67,12 @@ export const HomeBlog = () => {
             </div>
 
           </section>
+
+
+        
         </div>
         {/* <GlassFilterMarquee /> */}
+    
       </section>
     </>
   );

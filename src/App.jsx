@@ -21,13 +21,14 @@ function App() {
       <About />
       <GrowthCurve />
       <Skills />
-      <HomeBlog />
+     
       <Usesoundeffects />
       <RolesSection />
    
       <FrontEnd />
       <Backend />
          <FullStack />
+          <HomeBlog />
       <ContactForm />
     </>
   );

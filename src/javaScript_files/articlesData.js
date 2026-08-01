@@ -4,9 +4,9 @@
 /*  automatically.                                                     */
 /* ------------------------------------------------------------------ */
 import heroImagae from "../assets/large-hero.png";
-import dsa10 from "../assets/Dsa10th.webp"
+import dsa10 from "../assets/Dsa10th.webp";
 import fearOfAi from "../assets/fearOfAi.webp";
-import lazyloading from "../assets/lazyloading.webp"
+import lazyloading from "../assets/lazyloading.webp";
 export const img = (seed, w = 600, h = 400) =>
   `https://picsum.photos/seed/${seed}/${w}/${h}`;
 
@@ -46,16 +46,19 @@ export const articles = [
     date: "2d ago",
     excerpt: "To every new coder: remember your 10th class exam.",
     img: dsa10,
-        link: "https://medium.com/@katukurijaswanth2/passed-10th-math-then-dsa-is-not-hard-the-exact-same-trick-applies-311ba8598610?sharedUserId=katukurijaswanth2",
-  },{
+    link: "https://medium.com/@katukurijaswanth2/passed-10th-math-then-dsa-is-not-hard-the-exact-same-trick-applies-311ba8598610?sharedUserId=katukurijaswanth2",
+  },
+  {
     tags: ["Engineering"],
     title: "Why I Stopped Shipping One Giant Bundle",
     category: "Engineering",
     date: "Jun 2",
     excerpt:
       "How lazy loading and code splitting transformed the way I think about React deployments.",
-    img:lazyloading ,
-        link: "https://medium.com/@katukurijaswanth2/why-i-stopped-shipping-one-giant-javascript-bundle-1061440ba894?sharedUserId=katukurijaswanth2"},{
+    img: lazyloading,
+    link: "https://medium.com/@katukurijaswanth2/why-i-stopped-shipping-one-giant-javascript-bundle-1061440ba894?sharedUserId=katukurijaswanth2",
+  },
+  {
     tags: ["Engineering"],
     title: "Your API Is a Contract with the World",
     category: "Engineering",
@@ -63,7 +66,7 @@ export const articles = [
     excerpt:
       "In software engineering, few artifacts carry as much long-term consequence as the APIs we expose.",
     img: img("api-contract"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
   {
     tags: ["Engineering"],
@@ -73,7 +76,7 @@ export const articles = [
     excerpt:
       "By the end of this article, you won't just use HashMap — you'll understand every single thing happening under the hood.",
     img: img("hashmap-internals"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
   {
     tags: ["Startups"],
@@ -83,17 +86,18 @@ export const articles = [
     excerpt:
       "The story of InnCircles, and the founders who refused to accept that construction had to stay broken.",
     img: img("inncircles"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
- 
+
   {
     tags: ["Engineering"],
     title: "Understanding BCrypt in Spring Security",
     category: "Engineering",
     date: "Jun 1",
-    excerpt: "BCrypt in Spring Security — from plain passwords to secure authentication.",
+    excerpt:
+      "BCrypt in Spring Security — from plain passwords to secure authentication.",
     img: img("bcrypt"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
   {
     tags: ["Startups"],
@@ -103,7 +107,7 @@ export const articles = [
     excerpt:
       "Let me tell you a story. Not of a billion-dollar unicorn. Not of a Bengaluru garage startup swimming in VC money.",
     img: img("e2logy"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
   {
     tags: ["Engineering"],
@@ -113,7 +117,7 @@ export const articles = [
     excerpt:
       "You've been using it since second year. You've answered questions about it in five rounds of interviews.",
     img: img("hashmap-college"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
   {
     tags: ["Engineering"],
@@ -123,7 +127,7 @@ export const articles = [
     excerpt:
       "A deep dive into Spring Boot's @Value — and the architectural discipline it quietly demands.",
     img: img("annotation"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
   {
     tags: ["Fiction"],
@@ -134,7 +138,7 @@ export const articles = [
       "In the villages of the south, old men sometimes say a man's life is not a road but a forest.",
     img: img("sea-forest"),
     italic: true,
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
   {
     tags: ["Opinion"],
@@ -145,16 +149,17 @@ export const articles = [
       "Whenever someone posts something impressive created with AI, the first question is always the same.",
     img: img("share-prompt"),
     italic: true,
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
   {
     tags: ["Fiction"],
     title: "The Silent Piece That Can Destroy Kings",
     category: "Fiction",
     date: "Mar 8",
-    excerpt: "Life is a chessboard carved in black stone beneath the burning southern sun.",
+    excerpt:
+      "Life is a chessboard carved in black stone beneath the burning southern sun.",
     img: img("chess-kings"),
-        link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
+    link: "https://medium.com/@katukurijaswanth2/when-ai-starts-selling-why-we-need-to-watch-our-recommendations-closely-c7d734d3843f?sharedUserId=katukurijaswanth2",
   },
 ];
 
