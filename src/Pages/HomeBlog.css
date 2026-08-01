@@ -206,6 +206,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: bold;
+  backface-visibility: hidden;   /* prevents the hidden face from being clickable */
+  text-decoration: none;         /* removes underline since .top is now an <a> */
 }
 
 .top {
