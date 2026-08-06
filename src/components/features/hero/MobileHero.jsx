@@ -1,5 +1,5 @@
 import "./MobileHero.css"
-import heroImage from "../../../assets/hero-m.png"
+import heroImage from "../../../assets/hero-m.webp"
 import { MobileMenuHandler } from "../../../javaScript_files/MobileMenuHandler";
 export const MobileHero = () => {
 
@@ -80,13 +80,13 @@ export const MobileHero = () => {
                                 <i className="fa-brands fa-github"></i>
                             </a>
 
-                            <a
-                                href="https://mail.google.com/mail/?view=cm&to=katukurijaswanth2@gmail.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <i className="fa-regular fa-envelope"></i>
-                            </a>
+                         <a
+    href="https://medium.com/@katukurijaswanth2"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    <i className="fa-brands fa-medium"></i>
+</a>
 
                             <a
                                 href="https://x.com/kjaswanth_2"
