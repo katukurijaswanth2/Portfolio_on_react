@@ -1,5 +1,5 @@
 import "./Hero.css";
-import heroImg from "./assets/large-hero.png";
+import heroImg from "./assets/large-hero.webp";
 import SocialLinks from "./components/features/contact/SocialLinks";
 import { MobileHero } from "./components/features/hero/MobileHero";
 
