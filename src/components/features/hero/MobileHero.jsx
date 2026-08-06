@@ -96,12 +96,12 @@ export const MobileHero = () => {
                                 <i className="fa-brands fa-twitter"></i>
                             </a>
                         </div>
-
+{/* 
                         <p className="bio">
                             Full-Stack Java Developer (Java, Spring Boot, React.js) with an MCA,
                             experienced in building scalable, user-focused web applications across
                             the complete development lifecycle.
-                        </p>
+                        </p> */}
                     </div>
                 </div>
             </div>
