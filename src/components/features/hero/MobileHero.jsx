@@ -44,7 +44,7 @@ export const MobileHero = () => {
 
                         {/* From Uiverse.io by StealthWorm */}
                         <div className="star-parent">
-    <a
+    {/* <a
         href="https://mail.google.com/mail/?view=cm&to=katukurijaswanth2@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
@@ -52,7 +52,7 @@ export const MobileHero = () => {
     >
         <span className="text">HIRE ME</span>
         <span>Thanks </span>
-    </a>
+    </a> */}
 </div>
 
                         <div className="mlinks">
