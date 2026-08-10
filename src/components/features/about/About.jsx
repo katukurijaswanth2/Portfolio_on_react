@@ -55,15 +55,9 @@ export const About = () => {
               </div>
 
               <p className="about_para">
-                I'm a Full-Stack Java Developer with hands-on experience
-                building scalable, user-focused web applications using Java,
-                Spring Boot, and React.js. I enjoy working across the entire
-                development lifecycle from designing clean and efficient
-                backend APIs to creating responsive, intuitive user
-                interfaces. I completed my Master of Computer Applications
-                (MCA) from Vaagdevi College of Engineering (2023–2025) and
-                earned my Bachelor of Science (B.Sc. MPCS) from Vivekavardhani
-                Degree and PG College, graduating with a 7.8 GPA.
+               I’m a Full-Stack Java Developer with hands-on experience building scalable, user-focused web applications using Java, Spring Boot, and React.js. I enjoy working across the entire development lifecycle — from designing clean and efficient backend APIs to creating responsive, intuitive user interfaces.
+I completed my Master of Computer Applications (MCA) from Vaagdevi College of Engineering (2023–2025) and earned my Bachelor of Science (B.Sc. MPCS) from Vivekavardhani Degree and PG College with a 7.8 GPA. During my studies, I worked full-time as a teacher while managing early morning and late evening classes, and self-funded my entire education. Alongside my degree, I completed a professional full-stack development course and built end-to-end applications using Java, Spring Boot, SQL, and React.
+These experiences strengthened my discipline, time management, and ability to deliver consistently under pressure..
               </p>
 
               {/* STATS */}
