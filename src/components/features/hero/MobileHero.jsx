@@ -1,6 +1,7 @@
 import "./MobileHero.css"
 import heroImage from "../../../assets/hero-m.webp"
 import { MobileMenuHandler } from "../../../javaScript_files/MobileMenuHandler";
+import resume from "../../../assets/JaswanthKatukuri_Resume.pdf"
 export const MobileHero = () => {
 
     return (
@@ -25,7 +26,7 @@ export const MobileHero = () => {
               </li>
                             <li className="resume">
                                 <a
-                                    href="./resume/JASWANTH KATUKURI.pdf"
+                                    href={resume}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
