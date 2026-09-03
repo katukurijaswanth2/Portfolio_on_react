@@ -35,9 +35,9 @@ export const MobileHero = () => {
                         </ul>
                     </div>
 
-                    <div className="profile-image">
+                    {/* <div className="profile-image">
                         <img src={heroImage} alt="" />
-                    </div>
+                    </div> */}
 
                     <div className="profile-content">
                         <h2>K. JASWANTH</h2>
