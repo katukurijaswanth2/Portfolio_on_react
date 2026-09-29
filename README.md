@@ -202,14 +202,14 @@ Each card pulls live data from its repository. Use the buttons underneath to ope
     </td>
   </tr>
   <tr>
-    <td align="center" valign="top">
-      <a href="https://github.com/katukurijaswanth2/Scholarship-Finder"><img src="src/assets/Grantify.png" alt="Grantify" width="100%" /></a><br />
+    <td width="50%" align="center" valign="top">
+      <a href="https://github.com/katukurijaswanth2/Scholarship-Finder"><img src="src/assets/Grantify.png" alt="Grantify" width="100%" h /></a><br />
       <img src="https://img.shields.io/badge/Front_End-61DAFB?style=flat-square&labelColor=0c0c12&color=61DAFB" alt="Front End" /><br />
       <sub>Grantify helps students find scholarships by income, state, and education level.</sub><br />
       <a href="https://scholarpath-gamma.vercel.app/"><img src="https://img.shields.io/badge/View_live-5c61fb?style=for-the-badge&logo=vercel&logoColor=white" alt="View live" /></a>
       <a href="https://github.com/katukurijaswanth2/Scholarship-Finder.git"><img src="https://img.shields.io/badge/Source-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source" /></a>
     </td>
-    <td align="center" valign="top">
+   <td width="50%" align="center" valign="top">
       <a href="https://github.com/katukurijaswanth2/drivewise"><img src="src/assets/drivewise.png" alt="DriveWise" width="100%" /></a><br />
       <img src="https://img.shields.io/badge/Front_End-61DAFB?style=flat-square&labelColor=0c0c12&color=61DAFB" alt="Front End" /><br />
       <sub>DriveWise recommends vehicles based on your income for smarter choices.</sub><br />
