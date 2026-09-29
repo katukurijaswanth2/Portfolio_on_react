@@ -185,7 +185,7 @@ Each card pulls live data from its repository. Use the buttons underneath to ope
 <table width="100%">
   <tr>
     <td width="50%" align="center" valign="top">
-      <a href="https://github.com/katukurijaswanth2/KatukuriXpress"><img src="https://github-readme-stats.vercel.app/api/pin/?username=katukurijaswanth2&repo=KatukuriXpress&theme=tokyonight&bg_color=0c0c12&title_color=5c61fb&icon_color=5c61fb&hide_border=true" alt="KatukuriXpress" width="100%" /></a><br />
+      <a href="https://github.com/katukurijaswanth2/KatukuriXpress"><img src="src/assets/KatukuriXpress.png" alt="KatukuriXpress" width="100%" /></a><br />
       <img src="https://img.shields.io/badge/Front_End-61DAFB?style=flat-square&labelColor=0c0c12&color=61DAFB" alt="Front End" /><br />
       <sub>Responsive site with React.js, Tailwind CSS, Redux Toolkit, and JavaScript.</sub><br />
       <img src="https://skillicons.dev/icons?i=react,tailwind,redux,js&theme=dark" height="30" alt="React, Tailwind, Redux, JavaScript" /><br />
