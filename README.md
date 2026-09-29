@@ -267,17 +267,9 @@ I publish on Medium about Java, Spring Boot, React, system design, AI, and caree
 
 <div align="center">
 <a href="https://github.com/katukurijaswanth2">
-  <img src="https://github-readme-stats.vercel.app/api?username=katukurijaswanth2&show_icons=true&theme=tokyonight&bg_color=0c0c12&title_color=5c61fb&icon_color=5c61fb&hide_border=true" alt="GitHub stats" height="170" />
-</a>
-<a href="https://github.com/katukurijaswanth2?tab=repositories">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=katukurijaswanth2&layout=compact&theme=tokyonight&bg_color=0c0c12&title_color=5c61fb&hide_border=true" alt="Top languages" height="170" />
-</a>
-<br />
-<a href="https://github.com/katukurijaswanth2">
   <img src="https://streak-stats.demolab.com?user=katukurijaswanth2&theme=tokyonight&background=0c0c12&ring=5c61fb&fire=5c61fb&currStreakLabel=5c61fb&hide_border=true" alt="GitHub streak" />
 </a>
 </div>
-
 <img src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:0c0c12,50:5c61fb,100:0c0c12" width="100%" alt="" />
 
 ## Design and engineering decisions
