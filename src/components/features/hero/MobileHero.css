@@ -142,10 +142,14 @@
 } 
  
 .profile-content h2 { 
-    font-family: "Goldman", sans-serif; 
+    font-family: 'Syne', sans-serif;
     font-weight: 700; 
     font-style: normal; 
-    font-size: 2rem; 
+    font-size: 1.5rem; 
+     background: linear-gradient(90deg, #000000 0%, #001a66 50%, #0066ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 } 
  
 /* STAR PARENT */ 
@@ -187,8 +191,10 @@
 } 
  
 .mlinks a:hover { 
-    background-color: #111; 
-    color: #fff; 
+background: linear-gradient(90deg, #000000 0%, #001a66 50%, #0066ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 } 
  
 .mlinks i { 
