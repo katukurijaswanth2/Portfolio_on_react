@@ -6,8 +6,9 @@ export const MobileHero = () => {
     return (
     <>
        
-        <MobileMenuHandler />
+    <div class="mobile_parent">
             <div className="mobile-hero">
+                 <MobileMenuHandler />
                 <div className="profile-card">
                     <div className="hamburger">
                         <i className="fa-solid fa-bars"></i>
@@ -104,6 +105,7 @@ export const MobileHero = () => {
                         </p> */}
                     </div>
                 </div>
+            </div>
             </div>
        
         </>

@@ -4,12 +4,18 @@
     background-position: center;
     background-repeat: no-repeat;
   
-    background-size: 200%;
+    background-size: cover;
 
     display: none; 
     border: none; 
-    height: 100vh; 
+    /* border: 1px solid red; */
+    max-height: 100%;
+
 } 
+.mobile_parent{
+    max-height: 100vh;
+    /* border: 2px solid yellow; */
+}
  
 /* PROFILE CARD */ 
 .profile-card { 
