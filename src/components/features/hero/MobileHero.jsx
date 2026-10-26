@@ -92,7 +92,7 @@ export const MobileHero = () => {
                             <h1>
                                 K. JASWANTH
                                 <br />
-                              SOFTWARE DEVELOPER
+                              {/* SOFTWARE DEVELOPER */}
                             </h1>
 
                             <p className="hero-sub">

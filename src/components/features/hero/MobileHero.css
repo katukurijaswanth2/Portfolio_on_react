@@ -174,10 +174,10 @@
 }
 
 .profile-content h1 {
- font-family: "Audiowide", sans-serif;
-  font-weight: 600;
+  font-family: "BBH Bartle", sans-serif;
+  font-weight: 400;
   font-style: normal;
-    font-size: clamp(1.4rem, 6.6vw, 1.9rem);
+    font-size: clamp(1.4rem, 6.6vw, 0.9rem);
     line-height: 1.35;
     letter-spacing: 0.06em;
     
@@ -443,7 +443,7 @@ gap:0.5rem;
     display: inline-block;
     animation:
         popIn 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) backwards,
-        floatY 3s ease-in-out infinite;
+        floatY 3s ease-in-out;
 }
 .tech-icons i:nth-child(1) { animation-delay: 1.6s, 2.5s; }
 .tech-icons i:nth-child(2) { animation-delay: 1.78s, 2.7s; }
