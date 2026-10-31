@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 export default function LazySection({ children }) {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    rootMargin: "200px", // start loading before it appears
+    rootMargin: "50px", // start loading before it appears
   });
 
   return (

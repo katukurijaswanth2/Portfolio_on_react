@@ -2,9 +2,7 @@
 
 .about_main {
     height: auto;
-    background: url(../../../assets/back.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+background-color: #ffffff;
     padding: 3.5rem 4rem;
     overflow: hidden;
 }
@@ -584,4 +582,168 @@
     .about_dotgrid {
         display: none;
     }
+}
+/* New styles for the redesigned About section.
+   Import this AFTER About.css. Existing classes are untouched. */
+
+/* ---------- Lead sentence + tech chips ---------- */
+.about_content .about_lead {
+  margin: 0 0 1rem;
+  max-width: 58ch;
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+  font-weight: 600;
+  line-height: 1.5;
+  color: #181717;
+}
+
+.about_chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+
+.about_chip {
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  background: #f8fafc;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.about_content .about_body {
+  margin: 0 0 0.75rem;
+  max-width: 62ch;
+  line-height: 1.7;
+}
+
+/* ---------- Highlight cards ---------- */
+.about_stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about_stat {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.about_stat:hover {
+  transform: translateY(-2px);
+  border-color: #181717;
+}
+
+.about_stat_icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 10px;
+}
+
+.about_stat--blue .about_stat_icon {
+  background: #e0ecff;
+  color: #1d4ed8;
+}
+.about_stat--green .about_stat_icon {
+  background: #dcfce7;
+  color: #15803d;
+}
+.about_stat--purple .about_stat_icon {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+.about_stat--amber .about_stat_icon {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.about_stat_text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.about_stat_value {
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #181717;
+}
+
+.about_stat_label {
+  margin-top: 0.15rem;
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: #6b7280;
+}
+
+/* ---------- Call to action strip ---------- */
+.about_cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1.5rem 2rem;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #181717;
+  border-radius: 16px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.about_cta_title {
+  margin: 0 0 0.25rem;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+  color: #181717;
+}
+
+.about_cta_sub {
+  margin: 0;
+  color: #6b7280;
+}
+
+.about_cta_action {
+  flex-shrink: 0;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 600px) {
+  .about_stats {
+    grid-template-columns: 1fr;
+  }
+
+  .about_cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about_stat {
+    transition: none;
+  }
+  .about_stat:hover {
+    transform: none;
+  }
 }

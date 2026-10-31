@@ -11,7 +11,8 @@
   justify-content: center;
   /* box-sizing: border-box; */
 height: auto;
-}
+/* height: 100dvh;
+height: 100svh;*/} 
 
 /* WRAPPER */
 .growth_chart_wrapper {
@@ -100,5 +101,132 @@ height: auto;
 @media (max-width: 600px){
   .growth_title_text{
     font-size: 3rem;
+  }
+}
+/* ==========================================================
+   ANIMATIONS – paste at the END of your existing GrowthCurve.css
+   (no existing rule is modified)
+   ========================================================== */
+
+/* Title + subtitle start hidden, animate in when section is visible */
+.growth_chart_wrapper .growth_title,
+.growth_chart_wrapper .growth_subtitle {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.growth_chart_wrapper.growth_in_view .growth_title {
+  animation: growth_rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.growth_chart_wrapper.growth_in_view .growth_subtitle {
+  animation: growth_rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.25s forwards;
+}
+
+/* Shimmering gradient sweep across the title text */
+/* .growth_chart_wrapper.growth_in_view .growth_title_text {
+  background: linear-gradient(110deg, #fff 35%, #60a5fa 50%, #fff 65%);
+  background-size: 250% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: growth_shimmer 2.4s ease-in-out 0.6s 1 forwards;
+} */
+
+/* Underline that grows under the title */
+.growth_title {
+  position: relative;
+  padding-bottom: 14px;
+}
+
+/* .growth_title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  border-radius: 3px;
+  background: linear-gradient(90deg, transparent, #3b82f6, transparent);
+  transform: translateX(-50%);
+} */
+
+.growth_chart_wrapper.growth_in_view .growth_title::after {
+  animation: growth_underline 1.1s cubic-bezier(0.22, 1, 0.36, 1) 0.5s forwards;
+}
+
+/* Pulsing halo on the final dot */
+.growth_pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: growth_pulse 2s ease-out infinite;
+}
+
+/* Tooltip pops in */
+.growth_tooltip {
+  animation: growth_tip_in 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  box-shadow: 0 8px 30px rgba(59, 130, 246, 0.25);
+}
+
+/* Soft glow on dots */
+.growth_dot {
+  filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.6));
+}
+
+/* ---------- keyframes ---------- */
+@keyframes growth_rise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growth_shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes growth_underline {
+  to {
+    width: 160px;
+  }
+}
+
+@keyframes growth_pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.55;
+  }
+  100% {
+    transform: scale(4.2);
+    opacity: 0;
+  }
+}
+
+@keyframes growth_tip_in {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .growth_chart_wrapper .growth_title,
+  .growth_chart_wrapper .growth_subtitle {
+    opacity: 1;
+    transform: none;
+    animation: none !important;
+  }
+  .growth_pulse {
+    animation: none;
   }
 }

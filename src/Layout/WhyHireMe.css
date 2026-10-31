@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700&family=Libre+Franklin:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* ------------------------------------------------------------------
+   WhyHireMe.css - magazine "cards" on a grey desk
+   Each page is a fixed-width card (not full screen), with text sized
+   to stay readable.
+------------------------------------------------------------------- */
+
+.wh-root {
+  --ink: #111;
+  --paper: #fff;
+  --wall: #e6e6e8;
+  --mute: #555;
+  --padx: 40px;
+  --pady: 46px;
+  --fs: 13px;
+
+  background: #d9d9dc;
+  padding: 28px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  font-family: 'Libre Franklin', Helvetica, Arial, sans-serif;
+  font-size: var(--fs);
+  color: var(--ink);
+}
+.wh-root *,
+.wh-root *::before,
+.wh-root *::after {
+  box-sizing: border-box;
+}
+
+.wh-page {
+  position: relative;
+  width: 100%;
+  max-width: 780px;
+  background: var(--paper);
+  padding: var(--pady) var(--padx) 70px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+/* ---------------- page 1 grid ---------------- */
+.wh-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 35% minmax(0, 1fr);
+  grid-template-rows: minmax(600px, auto) auto;
+  column-gap: 14px;
+}
+.wh-left {
+  grid-column: 1;
+  grid-row: 1;
+  position: relative;
+  z-index: 3;
+}
+.wh-photo {
+  grid-column: 2;
+  grid-row: 1;
+  margin: calc(-1 * var(--pady)) calc(-1 * var(--padx)) 0 0; /* bleeds to top and right */
+  height: calc(100% + var(--pady));
+  background: var(--wall);
+  overflow: hidden;
+}
+.wh-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 12%;
+}
+.wh-hero {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  column-count: 2;
+  column-gap: 26px;
+  padding-top: 22px;
+}
+.wh-hero p {
+  margin: 0 0 0.8em;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.wh-hero p:last-child {
+  margin-bottom: 0;
+}
+.wh-dropcap {
+  float: left;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 0.78;
+  padding: 4px 8px 0 0;
+}
+
+/* ---------------- title ---------------- */
+.wh-title {
+  margin: -6px 0 0;
+  font-family: 'Bodoni Moda', 'Playfair Display', Didot, serif;
+  font-weight: 400;
+  line-height: 0.88;
+  letter-spacing: -0.01em;
+  color: #0b0b0b;
+  position: relative;
+  z-index: 4;
+
+}
+.wh-title span {
+  display: block;
+  white-space: nowrap;
+}
+
+
+.wh-title span:first-child {
+  font-size: 96px;
+}
+.wh-title span:last-child {
+  font-size: 68px;
+  margin-top: 4px;
+}
+.wh-title-sm span:first-child {
+  font-size: 78px;
+}
+.wh-title-sm span:last-child {
+  font-size: 56px;
+}
+.hire_me{
+   color: #939083;
+   font-size: 10px;
+}
+
+
+/* ---------------- standfirst ---------------- */
+.wh-standfirst {
+  position: relative;
+  z-index: 4;
+  margin: 26px 0 20px;
+  max-width: 270px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.32;
+  color: #222;
+}
+
+/* ---------------- at a glance ---------------- */
+.wh-glance {
+  border-top: 1px solid var(--ink);
+}
+.wh-stat {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 0;
+  border-bottom: 1px solid #cfcfd2;
+}
+.wh-stat strong {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+}
+.wh-stat span {
+  font-size: 11.5px;
+  line-height: 1.35;
+  color: #333;
+}
+
+/* ---------------- questions and lists ---------------- */
+.wh-cols {
+  column-count: 2;
+  column-gap: 26px;
+}
+.wh-q {
+  margin: 16px 0 6px;
+  font-size: 13.5px;
+  line-height: 1.35;
+  font-weight: 700;
+  break-after: avoid;
+}
+.wh-cols .wh-q:first-child {
+  margin-top: 0;
+}
+.wh-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.wh-list li {
+  display: grid;
+  grid-template-columns: 12px 1fr;
+  column-gap: 3px;
+  margin-bottom: 7px;
+  font-size: 13px;
+  line-height: 1.5;
+  break-inside: avoid;
+}
+.wh-bullet {
+  margin-top: 4px;
+  font-size: 10px;
+}
+
+.wh-ph {
+  background: #fff3b0;
+  padding: 0 3px;
+  border-radius: 2px;
+}
+
+/* ---------------- credit and folio ---------------- */
+.wh-credit {
+  position: absolute;
+  right: -30px;
+  bottom: 0;
+  writing-mode: vertical-rl;
+  font-size: 7px;
+  letter-spacing: 0.04em;
+  color: #444;
+}
+.wh-folio {
+  position: absolute;
+  left: var(--padx);
+  bottom: 22px;
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  font-size: 11px;
+}
+.wh-folio span {
+  color: var(--mute);
+}
+
+/* ---------------- inner pages ---------------- */
+.wh-p2head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 8px 30px;
+  margin-bottom: 26px;
+}
+.wh-p2head .wh-title {
+  margin-top: 0;
+}
+.wh-p2head .wh-standfirst {
+  flex: 1 1 220px;
+  margin: 0 0 8px;
+}
+.wh-standfirst-sm {
+  font-size: 16px;
+}
+
+.wh-three {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  padding-top: 16px;
+  border-top: 1px solid var(--ink);
+}
+.wh-sec {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin: 0 0 10px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 15px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+.wh-sec svg {
+  margin-top: 3px;
+  font-size: 12px;
+}
+.wh-kv {
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+
+.wh-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.wh-table th {
+  text-align: left;
+  font-weight: 700;
+  padding: 3px 6px 4px 0;
+  border-bottom: 2px solid var(--ink);
+}
+.wh-table td {
+  padding: 5px 6px 5px 0;
+  border-bottom: 1px solid #cfcfd2;
+  vertical-align: top;
+}
+.wh-table td:last-child {
+  font-weight: 600;
+}
+
+.wh-check {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid var(--ink);
+}
+.wh-check-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 26px;
+}
+.wh-check-item {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  font-size: 12.5px;
+  line-height: 1.45;
+}
+.wh-check-item b {
+  display: block;
+}
+.wh-check-item span {
+  color: #333;
+}
+.wh-tick {
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+/* pitch, plan, close */
+.wh-pitch {
+  margin: 0 0 30px;
+  padding: 24px 28px;
+  background: var(--wall);
+}
+.wh-quote-ico {
+  font-size: 22px;
+}
+.wh-pitch h2 {
+  margin: 6px 0 8px;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 500;
+  font-size: 26px;
+}
+.wh-pitch p {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.wh-plan {
+  padding-top: 16px;
+  border-top: 1px solid var(--ink);
+}
+.wh-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.wh-plan-grid b {
+  font-size: 13px;
+}
+.wh-plan-grid p {
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.wh-close {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid var(--ink);
+}
+.wh-close > p {
+  margin: 0 0 14px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 19px;
+  line-height: 1.4;
+}
+.wh-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  font-size: 12.5px;
+}
+.wh-note {
+  margin-top: 26px;
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--mute);
+}
+
+/* ---------------- phones ---------------- */
+@media (max-width: 640px) {
+  .wh-root {
+    --padx: 18px;
+    --pady: 26px;
+    padding: 12px 8px;
+  }
+  .wh-grid {
+    display: block;
+  }
+  .wh-photo {
+    margin: 18px calc(-1 * var(--padx)) 18px;
+    height: 360px;
+  }
+  .wh-title span:first-child {
+    font-size: 78px;
+  }
+  .wh-title span:last-child {
+    font-size: 54px;
+  }
+  .wh-standfirst {
+    max-width: none;
+  }
+  .wh-hero,
+  .wh-cols {
+    column-count: 1;
+  }
+  .wh-credit {
+    display: none;
+  }
+  .wh-three,
+  .wh-check-grid,
+  .wh-plan-grid {
+    grid-template-columns: 1fr;
+  }
+}
