@@ -36,9 +36,9 @@ import { useNavigate } from "react-router-dom";
 import EditorialNav from "../components/common/buttons/EditorialNav";
 
 // Temporary stock photo of a man. Replace with your own picture.
-const PHOTO_SRC =
+import PHOTO_SRC from 
   "../../src/assets/hero-m.webp";
-const PHOTO_FALLBACK = "../assets/hero-m.webp";
+// const PHOTO_FALLBACK = "../assets/hero-m.webp";
 
 /* ---------- helper: **bold** and [placeholder] markup ---------- */
 function Rich({ text }) {
