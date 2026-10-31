@@ -173,7 +173,7 @@ const tech = [
 ];
 
 const interpersonal = [
-  ["Communication", "Explaining difficult concepts to **[number]+ students** daily taught me to make technical ideas simple."],
+  ["Communication", "Explaining difficult concepts to **[500]+ students** daily taught me to make technical ideas simple."],
   ["Leadership", "Guiding students in academics, discipline and direction."],
   ["Time management", "Balancing **work + MCA + projects** across **5 years**."],
   ["Adaptability", "Learned new subjects, roles and technologies quickly, shown by **4 promotions in 1.5 years**."],
