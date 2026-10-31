@@ -214,10 +214,8 @@ const pitch =
   "I am a Full Stack Java developer who turns learning into results: **four promotions in 1.5 years**, consistently top academics, and **[20+] end-to-end projects**, including **[Grantify]**. I work across  **[Spring Boot]**, REST APIs, SQL and **[React.js]**, and I debug and ship clean code. I own what I start, I grow where I am trusted, and I want a team to build with for years. Give me the seat, and I will make the decision look easy.";
 
 /* ------------------------------ COMPONENT ------------------------------ */
-export default function WhyHireMe({ photo = PHOTO_SRC }) {
-  const onImgError = (e) => {
-    if (e.currentTarget.src !== PHOTO_FALLBACK) e.currentTarget.src = PHOTO_FALLBACK;
-  };
+export default function WhyHireMe() {
+ 
 
   const navigate = useNavigate();
   return (<>
@@ -252,9 +250,19 @@ export default function WhyHireMe({ photo = PHOTO_SRC }) {
             </div>
           </div>
 
-          <figure className="wh-photo">
-            <img src={photo} alt="Jaswanth Katukuri" onError={onImgError} />
-          </figure>
+         
+
+<figure className="wh-photo">
+  <img
+    src={PHOTO_SRC}
+    alt="Jaswanth Katukuri"
+    loading="lazy"
+    onError={(e) => {
+      e.currentTarget.onerror = null; // stops an infinite loop if the fallback also fails
+      e.currentTarget.src = PHOTO_FALLBACK;
+    }}
+  />
+</figure>
 
           <div className="wh-hero">
             <p>
