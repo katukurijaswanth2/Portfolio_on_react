@@ -1,0 +1,88 @@
+/* The parent's horizontal padding. Set this on the SAME value your page wrapper uses.
+   e.g. .page { padding: 0 24px; --page-padding: 24px; } */
+.editorial-nav {
+  --nav-bg: #010101;
+  --nav-ink: #ffffff;
+  --nav-muted: #4a4a4d;
+  --nav-rule: #fefefe;
+  /* --nav-pad: 20px; */
+
+  /* inverse padding: cancel the parent's padding so the bar spans edge to edge */
+  --page-padding: 0px;
+  box-sizing: border-box;
+  width: calc(100% + (var(--page-padding) * 2));
+  margin-inline: calc(var(--page-padding) * -1);
+padding:20px;
+
+  
+  background: var(--nav-bg);
+  /* border-radius: 16px; */
+  color: var(--nav-ink);
+  font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+}
+
+.editorial-nav__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  /* padding-bottom: 22px; */
+  border-bottom: 1px solid var(--nav-rule);
+}
+
+.editorial-nav__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.editorial-nav__back svg {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  transition: transform 0.15s ease;
+}
+
+.editorial-nav__back:hover svg {
+  transform: translate(-2px, -2px);
+}
+
+.editorial-nav__back:focus-visible {
+  outline: 2px solid var(--nav-ink);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.editorial-nav__meta {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--nav-ink);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .editorial-nav__back svg {
+    transition: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .editorial-nav__back {
+    font-size: 17px;
+  }
+  .editorial-nav__meta {
+    font-size: 12px;
+  }
+}

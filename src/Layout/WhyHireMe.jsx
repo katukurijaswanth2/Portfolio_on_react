@@ -32,11 +32,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./WhyHireMe.css";
 import ContactForm from "../components/Contactform/Contactform";
+import { useNavigate } from "react-router-dom";
+import EditorialNav from "../components/common/buttons/EditorialNav";
 
 // Temporary stock photo of a man. Replace with your own picture.
 const PHOTO_SRC =
   "../../src/assets/hero-m.webp";
-const PHOTO_FALLBACK = "https://randomuser.me/api/portraits/men/32.jpg";
+const PHOTO_FALLBACK = "../assets/hero-m.webp";
 
 /* ---------- helper: **bold** and [placeholder] markup ---------- */
 function Rich({ text }) {
@@ -187,7 +189,7 @@ const numbers = [
   ["Students handled later", "**[500]**"],
   ["Certification", "Full Stack Java (self-funded)"],
   ["Projects completed", "**[20+]**"],
-   ["Academic result", "**[CGPA / 8]**"],
+  ["Academic result", "**[CGPA / 8]**"],
 ];
 
 // What hiring teams screen for (per current recruiter guidance) and my proof
@@ -217,7 +219,10 @@ export default function WhyHireMe({ photo = PHOTO_SRC }) {
     if (e.currentTarget.src !== PHOTO_FALLBACK) e.currentTarget.src = PHOTO_FALLBACK;
   };
 
+  const navigate = useNavigate();
   return (<>
+<EditorialNav />
+
     <div className="wh-root">
       {/* ============================ PAGE 1 ============================ */}
       <article className="wh-page">
@@ -225,9 +230,9 @@ export default function WhyHireMe({ photo = PHOTO_SRC }) {
           <div className="wh-left">
             <h1 className="wh-title">
               <span>WHY</span>
-              
-              <span className="hire_me">HIRE ME</span> 
-            
+
+              <span className="hire_me">HIRE ME</span>
+
             </h1>
 
             <p className="wh-standfirst">
@@ -356,7 +361,7 @@ export default function WhyHireMe({ photo = PHOTO_SRC }) {
           </section>
         </div>
 
-      
+
         <Folio n="03" />
       </article>
 
@@ -396,7 +401,7 @@ export default function WhyHireMe({ photo = PHOTO_SRC }) {
             You get a developer who is already proven in the workplace, learns fast, stays loyal,
             and delivers from day one. <b>I am that person.</b>
           </p>
-        
+
         </section>
 
         {/* <div className="wh-note">
@@ -408,8 +413,8 @@ export default function WhyHireMe({ photo = PHOTO_SRC }) {
       </article>
     </div>
     <ContactForm />
-    </>
+  </>
 
-  
+
   );
 }

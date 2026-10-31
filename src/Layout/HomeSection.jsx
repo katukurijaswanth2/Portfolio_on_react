@@ -39,8 +39,7 @@ export const HomeSection = () => {
        <LazyOnView ><HomeBlog /></LazyOnView>
       <LazyOnView><ContactForm /></LazyOnView>
      
-       <LazyOnView minHeight="0"><SoundEffects /></LazyOnView>
-
+     
       {/* Not visual, so load it after the page is idle */}
      
     </>
