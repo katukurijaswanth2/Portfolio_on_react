@@ -11,6 +11,7 @@ function App() {
 
     <Route path="/" element ={<HomeSection /> }/>
     <Route path="/About" element ={<WhyHireMe />} />
+    <Route path ="*" element ={<HomeSection />} />
 
     
    </Routes>

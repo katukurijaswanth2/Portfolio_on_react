@@ -219,6 +219,7 @@ export default function WhyHireMe() {
 
   const navigate = useNavigate();
   return (<>
+
 <EditorialNav />
 
     <div className="wh-root">

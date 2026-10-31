@@ -19,6 +19,9 @@ padding:20px;
   /* border-radius: 16px; */
   color: var(--nav-ink);
   font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  /* position:fixed;
+  top:0%;
+  z-index: -1; */
 }
 
 .editorial-nav__row {
