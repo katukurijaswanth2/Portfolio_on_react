@@ -705,7 +705,7 @@ background-color: #ffffff;
   padding: 1.5rem 2rem;
   border: 1px solid #e5e7eb;
   border-left: 4px solid #181717;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   background: #fff;
   box-sizing: border-box;
 }
