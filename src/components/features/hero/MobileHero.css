@@ -30,17 +30,18 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 68%;
+    height: 100%;
     background: #fff;
+
     /* photo melts into the white panel */
-    -webkit-mask-image: linear-gradient(to bottom, #000 65%, transparent 100%);
-    mask-image: linear-gradient(to bottom, #000 65%, transparent 100%);
+    /* -webkit-mask-image: linear-gradient(to bottom, #000 65%, transparent 100%); */
+    /* mask-image: linear-gradient(to bottom, #000 65%, transparent 100%); */
 }
 
 .hero-photo img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     object-position: center top;
     filter: grayscale(1); /* black & white look; remove if your image is already B&W */
 }
@@ -157,7 +158,8 @@
     bottom: 0;
     width: 100%;
     z-index: 5;
-    background: transparent;
+    padding-top: 10px;
+    /* background: transparent; */
 }
 
 /* white sheet */
@@ -166,7 +168,7 @@
     z-index: 2;
     box-sizing: border-box;
     padding: 0 1.6rem 1.5rem;
-    padding-top: 2px;
+    padding-top: 15px;
     background: #fff;
     border-radius: 0 0 36px 36px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
@@ -215,10 +217,10 @@
     color: #333;
 }
 
-.tech-icons i:nth-child(1) { color: #2f6f6a; }
-.tech-icons i:nth-child(2) { color: #7a3e8e; }
-.tech-icons i:nth-child(3) { color: #c0735f; }
-.tech-icons i:nth-child(4) { color: #3d4d4a; }
+.tech-icons i:nth-child(1) { color: #03fb24; }
+.tech-icons i:nth-child(2) { color: #0512f9; }
+.tech-icons i:nth-child(3) { color: #510d0d; }
+.tech-icons i:nth-child(4) { color: #0af82a; }
 
 .hero-tag {
     font-size: 1.35rem;
@@ -269,7 +271,7 @@ gap:0.5rem;
     background: #000;
     color: #fff;
     text-decoration: none;
-    border-radius: 0 0 28px 28px;
+    /* border-radius: 0 0 28px 28px; */
 }
 
 .hire-bar i {
@@ -398,11 +400,11 @@ gap:0.5rem;
 }
 
 /* ---------- Photo ---------- */
-.hero-photo img {
+/* .hero-photo img {
     animation:
         heroPhotoIn 1.6s cubic-bezier(0.22, 1, 0.36, 1) backwards,
         heroBreath 8s ease-in-out 1.6s infinite alternate;
-}
+} */
 
 /* ---------- Hamburger ---------- */
 .hamburger {

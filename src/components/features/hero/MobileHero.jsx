@@ -5,7 +5,7 @@ import imageofmine from "../../../assets/hero-m.webp"
 
 // 👉 Replace this with your own image, e.g.
 // import heroImage from "../../../assets/hero-m.webp";
-const heroImage = "https://picsum.photos/700/1000?grayscale";
+
 
 export const MobileHero = () => {
     return (
