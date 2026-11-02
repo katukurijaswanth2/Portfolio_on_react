@@ -28,7 +28,7 @@ export default function EditorialNav({
         <button
           type="button"
           className="editorial-nav__back"
-          onClick={() => navigate(-1)}
+          onClick={() => navigate("/")}
         >
           <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
             <path
